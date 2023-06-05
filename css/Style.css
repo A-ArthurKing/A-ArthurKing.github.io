@@ -39,7 +39,7 @@ body{
 }
 /*!
 =================================================================================================================================
-     *TOPBAR
+     *HEADER
 =================================================================================================================================
 */
 .topbar {
@@ -55,18 +55,14 @@ body{
     position: absolute;
     display: none;
 }
-
 .contact-icone {
     display: flex;
     align-items: center;
     gap: 20px;
 }
-
 small {
     padding-left: 10px;
 }
-
-
 .contact-icone>small {
     cursor: pointer;
     transition: all 0.5s ease-in;
@@ -74,33 +70,25 @@ small {
     font-weight: bold;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-
 .contact-icone>small:hover {
     color: #e6aac0;
 }
-
 .social-icone {
     display: flex;
     gap: 20px;
     align-items: center;
 }
-
 .fa3 {
     font-size: 24px;
     color: white;
     transition: all 0.5s ease-in-out;
 
 }
-
 .fa3:hover {
     color: #f21268;
 }
 
-/*!
-=================================================================================================================================
-     *NAV
-=================================================================================================================================
-*/
+
 Nav {
     width: 95%;
     max-width: 95%;
@@ -114,9 +102,9 @@ Nav {
     transform: translate(-50%, -50%);
 }
 #logo {
-        color: #F2789F;
-        cursor: pointer;
-        padding-top: 15px;
+    color: #F2789F;
+    cursor: pointer;
+    padding-top: 15px;
 }
 .nav-links{
     display: flex;
@@ -172,11 +160,6 @@ nav button:hover {
     color: #F2789F;
     font-size: 30px;
 }
-/*!
-=================================================================================================================================
-     *HEADER
-=================================================================================================================================
-*/
 
 
 .header {
@@ -190,9 +173,8 @@ nav button:hover {
     background-position: left center;
     position: relative;
     position: relative;
-    z-index: 99;
+    z-index: 79;
 }
-
 .header::before {
     content: "";
     position: absolute;
@@ -210,7 +192,6 @@ nav button:hover {
     transform: translate(-50%, -50%);
     width:60vw;
 }
-
 .title {
     color: white;
     font-size: 6vw;
@@ -249,310 +230,4 @@ nav button:hover {
     background-color: white;
     color: #e6aac1;
     border: 1px solid #F2789F;
-}
-
-/*!
-=================================================================================================================================
-     *A PROPOS
-=================================================================================================================================
-*/
-section.a-propos {
-    height: 100vh;
-    width: 100vw;
-    max-width: 100%;
-    max-height: 100%;
-    background-color: #fee3ec8b;
-}
-
-.header-propos {
-    padding: 20px 0 0  0;
-    width: 100%;
-    min-width:70%;
-    height: 15%;
-    text-align: center;
-    margin: auto;
-}
-
-.header-propos>h1 {
-    font-size: 30px;
-    text-align: center;
-    color: #F2789F;
-}
-
-.header-propos>p {
-    font-size: 20px;
-    text-align: center;
-    margin: 0;
-    padding: 0 170px;
-}
-
-.header-propos>p>span {
-    color: #F2789F;
-
-}
-
-.spécialité {
-    margin: 20px 0;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    width: 80vw;
-    height: 55%;
-    padding: 0 5vw;
-    gap: 0px;
-    margin: auto;
-}
-
-.box-spécialité {
-    width: 150px;
-    max-width: 100%;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 40px auto;
-}
-
-.box-spécialité>h1 {
-    transition: all 0.3s ease-in-out;
-    text-align: center;
-    margin: 0;
-    color:#F2789F;
-    font-size: 15px;
-    cursor: pointer;
-    padding: 3px 10px;
-    border-radius: 10px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-.box-spécialité>h1:hover {
-    font-size: 20px;
-    transition: all 0.3s ease-out;
-}
-
-.sp-img1 {
-    background: url(../images/massage.jpg);
-    background-position: right;
-    background-size: cover;
-    height: auto;
-    border-radius: 50%;
-    width: 130px;
-    height: 130px;
-    border: 6px solid #F2789F;
-    transition: all 0.3s ease-in-out;
-}
-.sp-img1:hover {
-    border: 6px solid white;
-    transition: all 0.3s ease-in-out;
-}
-
-.sp-img2 {
-    background: url(../images/soinsvisage.jpg);
-    background-position: center left;
-    background-size: cover;
-    border-radius: 50%;
-    width: 130px;
-    height: 130px;
-    border: 6px solid #F2789F;
-}
-.sp-img2:hover {
-    border: 6px solid white;
-    transition: all 0.3s ease-in-out;
-}
-
-.sp-img3 {
-    background: url(../images/yy.jpg);
-    background-position: center;
-    background-size: cover;
-    border-radius: 50%;
-    width: 130px;
-    height: 130px;
-    border: 6px solid #F2789F;
-}
-.sp-img3:hover {
-    border: 6px solid white;
-    transition: all 0.3s ease-in-out;
-}
-.sp-img4 {
-    background: url(../images/épilation-smal-imahe.jpg);
-    background-position: center;
-    background-size: cover;
-    border-radius: 50%;
-    width: 130px;
-    height: 130px;
-    border: 6px solid #F2789F;
-}
-.sp-img4:hover {
-    border: 6px solid white;
-    transition: all 0.3s ease-in-out;
-}
-.sp-img5 {
-    background: url(../images/Sauna.jpg);
-    background-position: center;
-    background-size: cover;
-    border-radius: 50%;
-    width: 130px;
-    height: 130px;
-    border: 6px solid #F2789F;
-}
-.sp-img5:hover {
-    border: 6px solid white;
-    transition: all 0.3s ease-in-out;
-}
-.sp-img6 {
-    background: url(../images/Sauna.jpg);
-    background-position: center;
-    background-size: cover;
-    border-radius: 50%;
-    width: 130px;
-    height: 130px;
-    border: 6px solid #F2789F;
-}
-.propos-box{
-    display: flex;
-    height: 25vh;
-    width: 100%;
-    background: url(../images/massage.jpg);
-    background-position: center;
-    background-size: cover;
-    background-color: black;
-    position: relative;
-}
-.propos-box::before {
-    content: "";
-    position: absolute;
-    background-color: rgb(0, 0, 0);
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    opacity: 50%;
-}
-.box-itm{
-    width: 90%;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    margin: auto;
-}
-.box{
-    height: 80px;
-    width: 150px;
-    background-color: #e6aac18c;
-    backdrop-filter: blur(10px);
-    text-align: center;
-    margin: auto;
-}
-.box h1{
-    color: #f21268;
-    height: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.box p{
-    color: white;
-    align-items: center;
-    justify-content: center;
-}
-/*!
-=================================================================================================================================
-     *CHOICE
-=================================================================================================================================
-*/
-.choice {
-    height: 100vh;
-    width: 100vw;
-    max-width: 100%;
-    max-height: 100%;
-    background-color: #fee3ec8b;
-}
-
-.title-choice {
-    text-align: center;
-    height: 20%;
-    padding: 20px 0;
-}
-
-.title-choice h3 {
-    color: black;
-    font-family: Million Harmony;
-
-}
-
-.title-choice h3 span {
-    color: #F2789F;
-}
-
-.title-choice h1 {
-    margin: auto;
-    font-size: 25px;
-    color: #F2789F;
-}
-
-.object-choice {
-    width: 90%;
-    height: 60%;
-    display: flex;
-    margin: auto;
-    flex-wrap: nowrap;
-}
-
-.itm-choice {
-    width: 45%;
-    height: 100%;
-    display: flex;
-    margin: auto;
-}
-
-.lot1 {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.lot2 {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.scare {
-    display: flex;
-    width: 80%;
-    height: 40%;
-    flex-wrap: wrap;
-    margin: 15px;
-}
-
-.scare h3 {
-    color: #F2789F;
-    font-size: 15px;
-}
-
-div.img-choice {
-    background: url(../images/massagesansbg.jpg);
-    background-position: center;
-    background-size: cover;
-    width: 40%;
-    
-}
-
-/*!
-=================================================================================================================================
-     *GALÉRIE
-=================================================================================================================================
-*//*
-.Galerie{
-    width: 100vw;
-    height: 100vh;
-    max-width: 100%;
-    max-height: 100%;
-    background-color:#fee3ec8b;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
 }
