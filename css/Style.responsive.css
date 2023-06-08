@@ -1,15 +1,30 @@
 @media screen and (max-width:1024px) {
- 
+/*!
+=================================================================================================================================
+      *A PROPOS
+=================================================================================================================================
+*/
+    section.a-propos {
+        height: auto;
+    }
+    .header-propos>p {
+        padding: 0 70px;
+    }
+    .carousel {
+        width: 80%;
+    }
+    .carousel__item {
+        width: 12VW;
+        height: 12vw;
+      }
+    .carousel__item h6{
+        font-size: 15px;
+      }
+      .box{
+        height: 8VW;
+        width: 13VW;
+    }
 }
-
-
-
-
-@media screen and (max-width:900px) {
-
- }
-
-
 
 
 @media screen and (max-width:900px) {
@@ -32,7 +47,6 @@
         *HEADER
     =================================================================================================================================
     */
-
     .header {
         background-color: white;
         height: 30vh;
@@ -53,7 +67,7 @@
         position: absolute;
         z-index: 99999;
         right: 40px;
-        font-size: 4vh;
+        font-size: 3vh;
     }
     .nav-links {
         position: absolute;
@@ -90,13 +104,20 @@
         font-size: 4vh;
     }
     #logo {
-        font-size: 28px;
+        font-size: 20px;
         padding-left: 28px;
         font-family: Million Harmony;
     }
     .mobile-menu {
         margin-left: -20px;
     }
+/*!
+=================================================================================================================================
+      *A PROPOS
+=================================================================================================================================
+*/
+
+
  }
 
 
