@@ -231,3 +231,203 @@ nav button:hover {
     color: #e6aac1;
     border: 1px solid #F2789F;
 }
+
+/*!
+=================================================================================================================================
+      *A PROPOS
+=================================================================================================================================
+*/
+section.a-propos {
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    max-height: 100%;
+    background-color: #fee3ec8b;
+}
+
+.header-propos {
+    padding: 20px 0 0  0;
+    width: 100%;
+    min-width:70%;
+    height: 15%;
+    text-align: center;
+    margin: auto;
+}
+.header-propos>h1 {
+    font-size: 30px;
+    text-align: center;
+    color: #F2789F;
+}
+
+.header-propos>p {
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    padding: 0 170px;
+}
+
+.header-propos>p>span {
+    color: #F2789F;
+
+}
+  
+  
+  .carousel {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    width: 80%;
+    height: 50%;
+    border-radius: 200px;
+  }
+  
+  .carousel__slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 80vw;
+    height: 200px;
+  }
+  
+  .carousel__list {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .carousel__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #333;
+    border-radius: 50px;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  
+  .carousel__item:hover {
+    transform: scale(1.1);
+    font-size: 25px;
+  }
+
+.sp-img1 {
+  background: url(../images/petiteimgepilation.jpg);
+  background-position: center;
+  background-size: cover;
+  height: auto;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  border: 2px solid #F2789F;
+  transition: all 0.3s ease-in-out;
+}
+.sp-img2 {
+  background: url(../images/petiteimg_massage.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  border: 3px solid #F2789F;
+}
+
+.sp-img3 {
+  background: url(../images/petiteimg_soinsvisage.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  border: 3px solid #F2789F;
+}
+.sp-img4 {
+  background: url(../images/épilation-smal-imahe.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  border: 3px solid #F2789F;
+}
+.sp-img5 {
+  background: url(../images/Sauna.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  border: 3px solid #F2789F;
+}
+.sp-img6 {
+  background: url(../images/Sauna.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  border: 3px solid #F2789F;
+}
+.carousel__item h6{
+  color:#F2789F;
+  position: absolute;
+ padding-top: 150px;
+}
+.propos-box{
+    display: flex;
+    height: 25vh;
+    width: 100%;
+    background: url(../images/massage.jpg);
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+    position: relative;
+}
+.propos-box::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 50%;
+}
+.box-itm{
+    width: 90%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: auto;
+}
+.box{
+    height: 80px;
+    width: 150px;
+    background-color: #e6aac18c;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    margin: auto;
+}
+.box h1{
+    color: #f21268;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box p{
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
