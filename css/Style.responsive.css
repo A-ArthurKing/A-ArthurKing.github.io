@@ -20,9 +20,18 @@
     .carousel__item h6{
         font-size: 15px;
       }
-      .box{
+    .propos-box{
+        height: 15vh;
+    }
+    .box{
         height: 8VW;
         width: 13VW;
+    }
+    .box h1{
+        font-size: 3vw;
+    }
+    .box p{
+        font-size: 2vw;
     }
 }
 
@@ -104,7 +113,7 @@
         font-size: 4vh;
     }
     #logo {
-        font-size: 20px;
+        font-size: 15px;
         padding-left: 28px;
         font-family: Million Harmony;
     }
@@ -116,7 +125,9 @@
       *A PROPOS
 =================================================================================================================================
 */
-
+.header-propos>p {
+    padding: 4px 20px;
+}
 
  }
 
