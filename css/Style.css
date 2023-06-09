@@ -273,7 +273,6 @@ section.a-propos {
   .carousel {
     position: relative;
     overflow: hidden;
-    border-radius: 20px;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -290,6 +289,23 @@ section.a-propos {
     height: 200px;
   }
   
+  .carousel__slider::before,
+    .carousel__slider::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 30px; 
+    height: 100%;
+    background: linear-gradient(to right, rgba(254, 227, 236, 0.55), rgba(254, 227, 236, 0));
+  }
+ .carousel__slider::before {
+  left: 0;
+}
+
+.carousel__slider::after {
+  right: 0;
+  transform: rotateZ(180deg);
+}
   .carousel__list {
     position: absolute;
     width: 100%;
@@ -298,24 +314,9 @@ section.a-propos {
     transform: translateY(-50%);
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
   }
-  .carousel__list::after,  .carousel__list::before{
-    background: linear-gradient(to right,rba(255,255,255,1)0%,rgba(255,255,255,0) 100%);
-    content: '';
-    height: 100%;
-    position: absolute;
-    z-index: 2;
-  }
-  .carousel__list::before{
-   left: 0;
-   top: 0;
-  }
-  .carousel__list::before{
-  right: 0;
-  top: 0;
-  transform: rotateZ(180deg);
- }
+
   .carousel__item {
     display: flex;
     align-items: center;
@@ -395,6 +396,7 @@ section.a-propos {
   position: absolute;
  padding-top: 150px;
 }
+
 .propos-box{
     display: flex;
     height: 25vh;

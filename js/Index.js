@@ -10,13 +10,14 @@ menuHamburger.addEventListener("click", () => {
   }
 });
 
-function carousel() {
-  let carouselSlider = document.querySelector(".carousel__slider");
-  let list = document.querySelector(".carousel__list");
-  let item = document.querySelectorAll(".carousel__item");
-  let list2;
 
-  const speed = 1;
+let carouselSlider = document.querySelector(".carousel__slider");
+let list = document.querySelector(".carousel__list");
+let item = document.querySelectorAll(".carousel__item");
+let list2;
+
+function carousel() {
+  const speed = 0.4;
 
   const width = list.offsetWidth;
   let x = 0;
@@ -68,3 +69,5 @@ function carousel() {
 }
 
 carousel();
+
+
