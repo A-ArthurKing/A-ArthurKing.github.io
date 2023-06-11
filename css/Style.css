@@ -107,14 +107,14 @@ Nav {
 .scroll{
     background-color:white;
 }
-#logo img {
-    width: 7vw;
-    height:7vw;
-} 
 #logo  {
     border-radius: 50px;
     padding-top: 15px;
 }   
+#logo img {
+    width: 7vw;
+    height:7vw;
+} 
 .nav-links{
     display: flex;
     align-items: center;
