@@ -25,6 +25,9 @@
     list-style: none;
     text-decoration: none;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 a {
     color: white;
@@ -34,9 +37,7 @@ a {
 *::after {
     box-sizing: border-box;
 }
-body{
-    background-color:#fee3ec8b;
-}
+
 /*!
 =================================================================================================================================
      *HEADER
@@ -90,22 +91,30 @@ small {
 
 
 Nav {
-    width: 95%;
-    max-width: 95%;
-    height: 85px;
+    width: 100%;
+    height: 79px;
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    top: 40px;
+    top: 30px;
     left: 50%;
     transform: translate(-50%, -50%);
+    position: fixed;
+    z-index: 9999999;
+    transition: background-color 0.5s ease, height 0.5s ease;
 }
-#logo {
-    color: #F2789F;
-    cursor: pointer;
+.scroll{
+    background-color:white;
+}
+#logo img {
+    width: 7vw;
+    height:7vw;
+} 
+#logo  {
+    border-radius: 50px;
     padding-top: 15px;
-}
+}   
 .nav-links{
     display: flex;
     align-items: center;
@@ -126,13 +135,13 @@ nav ul li a {
     font-weight: lighter;
     font-size: 1.5vw;
     transition: all 0.3;
-    color: white;
+    color: #F2789F;
     font-weight: bold;
     transition: all 0.5s ease-out;
 }
 nav ul li a:hover {
     transition: all 0.3 ease-out;
-    color:#F2789F;
+    color:#f21268;
 }
 nav button {
     font-family: Bell MT;
@@ -168,7 +177,7 @@ nav button:hover {
     width: 100%;
     max-width: 100%;
     max-height: 100%;
-    background-image: url(../images/bg1.jpg);
+    background-image: url(../images/b-medium.jpg);
     background-size: cover;
     background-position: left center;
     position: relative;
@@ -218,7 +227,7 @@ nav button:hover {
     justify-content: center;
     padding: 5px 20px;
     cursor: pointer;
-    background-color: #F2789F;
+    background-color: transparent;
     border: 2px solid;
     color: white;
     font-size: 2.5vw;
@@ -238,18 +247,17 @@ nav button:hover {
 =================================================================================================================================
 */
 section.a-propos {
-    height: 100vh;
+    height: 90vh;
     width: 100vw;
     max-width: 100%;
     max-height: 100%;
-    background-color: #fee3ec8b;
+    background-color:white;
 }
-
 .header-propos {
-    padding: 20px 0 0  0;
+    padding: 79px 0 0  0;
     width: 100%;
     min-width:70%;
-    height: 15%;
+    height: 20%;
     text-align: center;
     margin: auto;
 }
@@ -258,19 +266,18 @@ section.a-propos {
     text-align: center;
     color: #F2789F;
 }
-
 .header-propos>p {
     font-size: 20px;
     text-align: center;
     margin: 0;
     padding: 0 170px;
 }
-
 .header-propos>p>span {
     color: #F2789F;
 }
   
-  .carousel {
+
+.carousel {
     position: relative;
     overflow: hidden;
     display: flex;
@@ -278,32 +285,35 @@ section.a-propos {
     align-content: center;
     margin: auto;
     width: 80%;
-    height: 50%;
-  }
+    height: 55%;
+}
   
-  .carousel__slider {
+.carousel__slider {
     position: relative;
     display: flex;
     align-items: center;
     width: 80vw;
     height: 200px;
-  }
+}
   
-  .carousel__slider::before,
-    .carousel__slider::after {
+.carousel__slider::before,
+.carousel__slider::after {
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0) 100%);
     content: "";
     position: absolute;
     top: 0;
-    width: 30px; 
+    width: 20px; 
     height: 100%;
-    background: linear-gradient(to right, rgba(254, 227, 236, 0.55), rgba(254, 227, 236, 0));
+    z-index: 2;
   }
- .carousel__slider::before {
-  left: 0;
+.carousel__slider::before {
+  left: 0px;
+  top: 0;
 }
 
 .carousel__slider::after {
-  right: 0;
+  right: -1px;
+  top: 0;
   transform: rotateZ(180deg);
 }
   .carousel__list {
@@ -394,12 +404,13 @@ section.a-propos {
 .carousel__item h6{
   color:#F2789F;
   position: absolute;
- padding-top: 150px;
+  padding-top: 150px;
+  font-size: 1.5vw;
 }
 
 .propos-box{
     display: flex;
-    height: 25vh;
+    height: 18vh;
     width: 100%;
     background: url(../images/massage.jpg);
     background-position: center;
@@ -444,4 +455,7 @@ section.a-propos {
     align-items: center;
     justify-content: center;
 }
+
+
+
 

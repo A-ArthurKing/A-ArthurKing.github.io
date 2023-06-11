@@ -11,6 +11,17 @@ menuHamburger.addEventListener("click", () => {
 });
 
 
+const navBar = document.querySelector(".nav-bar");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 0) {
+    navBar.classList.add("scroll");
+  } else {
+    navBar.classList.remove("scroll");
+  }
+});
+
+
 let carouselSlider = document.querySelector(".carousel__slider");
 let list = document.querySelector(".carousel__list");
 let item = document.querySelectorAll(".carousel__item");
