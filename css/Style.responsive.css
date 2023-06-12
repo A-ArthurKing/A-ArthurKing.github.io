@@ -155,12 +155,13 @@ font-size: 15px;
 */
 section.a-propos {
     height:auto;
+    padding-top: 20px;
 }
 .propos-contain{
     flex-wrap: wrap;
 }
 .propos-msg{
-    width: 90%;
+    width: 100%;
     height: 90%;
     display: flex;
     margin: 20px auto;
@@ -182,13 +183,19 @@ section.a-propos {
 }
 .header-propos {
     width: 90vw;
-    margin-bottom: 70px;
+    margin-bottom: 10px;
+}
+.header-propos>h1 {
+    font-size: 5.5vw;
 }
 .header-propos>p {
-    font-size: 3vw;
+    font-size: 3.5vw;
     text-align: justify;
     margin: 0;
     padding: 0 10px;
+}
+.header-propos>p span {
+    font-size: 3.6vw;
 }
  }
 
