@@ -25,6 +25,7 @@
     list-style: none;
     text-decoration: none;
 }
+
 html{
     scroll-behavior: smooth;
 }
@@ -37,6 +38,7 @@ a {
 *::after {
     box-sizing: border-box;
 }
+
 body{
     background: aliceblue;
 }
@@ -58,14 +60,17 @@ body{
     position: absolute;
     display: none;
 }
+
 .contact-icone {
     display: flex;
     align-items: center;
     gap: 20px;
 }
+
 small {
     padding-left: 10px;
 }
+
 .contact-icone>small {
     cursor: pointer;
     transition: all 0.5s ease-in;
@@ -73,19 +78,23 @@ small {
     font-weight: bold;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
 .contact-icone>small:hover {
     color: #e6aac0;
 }
+
 .social-icone {
     display: flex;
     gap: 20px;
     align-items: center;
 }
+
 .fa3 {
     font-size: 24px;
     color: white;
     transition: all 0.5s ease-in-out;
 }
+
 .fa3:hover {
     color: #f21268;
 }
@@ -105,9 +114,11 @@ Nav {
     z-index: 9999999;
     transition: background-color 0.5s ease, height 0.5s ease;
 }
+
 .scroll{
     background-color: aliceblue;
 }
+
 #logo  {
     border-radius: 50px;
     padding-top: 15px;
@@ -116,11 +127,13 @@ Nav {
     width: 7vw;
     height:7vw;
 } 
+
 .nav-links{
     display: flex;
     align-items: center;
     gap: 4vw;
 }
+
 nav ul {
     display: inline-flex;
     justify-content: space-between;
@@ -130,20 +143,23 @@ nav ul {
     max-width:auto ;
     gap: 3vw;
 }
+
 nav ul li a {
     font-family: Bell MT;
     padding: 3px 10px;
     font-weight: lighter;
-    font-size: 1.5vw;
+    font-size: 1.6vw;
     transition: all 0.3;
     color: #F2789F;
     font-weight: bold;
     transition: all 0.5s ease-out;
 }
+
 nav ul li a:hover {
     transition: all 0.3 ease-out;
     color:#f21268;
 }
+
 nav button {
     font-family: Bell MT;
     padding: 5px 20px;
@@ -155,17 +171,20 @@ nav button {
     transition: all 0.6s ease-in-out;
     border: 1px solid rgb(202, 122, 122);
 }
+
 nav button:hover {
     background-color: white;
     color: #e6aac1;
     border: 1px solid #F2789F;
 }
+
 .menu-hamburger {
     font-size: 5vw;
     color: #e6aac1;
     cursor: pointer;
     display: none;
 }
+
 .fa-regular {
     color: #F2789F;
     font-size: 30px;
@@ -185,6 +204,7 @@ nav button:hover {
     position: relative;
     z-index: 79;
 }
+
 .header::before {
     content: "";
     position: absolute;
@@ -195,6 +215,7 @@ nav button:hover {
     left: 0;
     opacity: 50%;
 }
+
 .header-txt {
     position: absolute;
     top: 55%;
@@ -202,6 +223,7 @@ nav button:hover {
     transform: translate(-50%, -50%);
     width:60vw;
 }
+
 .title {
     color: white;
     font-size: 6vw;
@@ -210,9 +232,11 @@ nav button:hover {
     display: flex;
     justify-content: center;
 }
+
 .title span {
     color: #F2789F;
 }
+
 .sstitle {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: white;
@@ -220,13 +244,14 @@ nav button:hover {
     display: flex;
     justify-content: center;
 }
+
 .header-txt .button {
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
-    padding: 5px 20px;
+    padding: 2px 25px;
     cursor: pointer;
     background-color: transparent;
     border: 2px solid;
@@ -236,6 +261,7 @@ nav button:hover {
     border: 1px solid white;
     font-family: Bell MT;
 }
+
 .header-txt .button:hover {
     background-color: white;
     color: #e6aac1;
@@ -248,70 +274,90 @@ nav button:hover {
 =================================================================================================================================
 */
 section.a-propos {
-    height: 90vh;
+    height: 95vh;
     width: 100vw;
     max-width: 100%;
     max-height: 100%;
     background: aliceblue;
     margin: auto;
     padding-top: 50px;
-}
- 
-.propos-contain{
-    margin: 20px 0;
-    height: 100%;
-    width: 80%;
     display: flex;
     flex-wrap: nowrap;
-    margin: auto;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
 }
+
 .propos-msg{
-    width: 50%;
+    width: 45%;
     height: 90%;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
+.msg-txt{
+    width: auto;
+    height: auto;
+    margin: 0 0 0 20px;
+}
+
+.msg-txt>h1 {
+    font-size: 40px;
+    color: #F2789F;
+    margin-bottom: 10px;
+}
+.msg-txt>p {
+    font-size: 18px;
+    margin: 13px 0;
+}
+.msg-txt>p>span {
+    color: #F2789F;
+    font-weight: bold;
+    padding-right: 5px;
+    font-size: 20px;
+}
+.msg-txt .button {
+    display: flex;
+    margin: 20px 0 0 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 5px 20px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid;
+    color: white;
+    background-color:#F2789F;
+    font-size: 1.5vw;
+    transition: all 0.6s ease-out;
+    border: 1px solid white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.msg-txt .button:hover {
+    background-color: white;
+    color: #e6aac1;
+    border: 1px solid #F2789F;
+}    
+
 .propos-img{
-    width: 50%;
+    width: 45%;
     height: 90%;
     position: relative;
     display: flex;
-}
+} 
+
 .propos-img img{
-    width: 25vw;
+    width: 100%;
     height: 70vh;
     margin: auto;
     object-fit: cover;
     object-position: center;
     box-shadow: -18px 21px 5px 2px rgba(242,120,159,0.61);
--webkit-box-shadow: -18px 21px 5px 2px rgba(242,120,159,0.61);
--moz-box-shadow: -18px 21px 5px 2px rgba(242,120,159,0.61);
+    -webkit-box-shadow: -18px 21px 5px 2px rgba(242,120,159,0.61);
+    -moz-box-shadow: -18px 21px 5px 2px rgba(242,120,159,0.61);
 }
-
-.header-propos {
-    width: 50vw;
-    height: 70vh;
-    text-align: center;
-    margin: auto;
-}
-.header-propos>h1 {
-    font-size: 40px;
-    text-align: center;
-    color: #F2789F;
-    margin-bottom: 10px;
-}
-.header-propos>p {
-    font-size: 18px;
-    text-align: justify;
-    margin: 0;
-    padding: 0 40px;
-}
-.header-propos>p>span {
-    color: #F2789F;
-    font-weight: bold;
-    padding-right: 5px;
-    font-size: 20px;
-}    
-/*!
+/*
 =================================================================================================================================
       *A PROPOS
 =================================================================================================================================

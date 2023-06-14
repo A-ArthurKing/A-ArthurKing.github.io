@@ -7,19 +7,19 @@
     section.a-propos {
         height: auto;
         margin-bottom: 40px;
+    }   
+        
+    .propos-msg{
+        width: 50%;
     }
-    
-.propos-msg{
-    width: 50%;
-}
 
-.header-propos {
-    width: 100%;
-}
+    .header-propos {
+        width: 100%;
+    }
 
-.header-propos>p {
-    padding: 0 ;
-}
+    .header-propos>p {
+        padding: 0 ;
+    }
 
 }
 
@@ -34,32 +34,39 @@
         font-size: 2vw;
     }
   
-/*!
-=================================================================================================================================
-      *A PROPOS
-=================================================================================================================================
-*/
-section.a-propos {
-    height: auto;
-    margin-bottom: 40px;
-}
-
-.propos-msg{
-width: 50%;
-}
-
-.header-propos {
-width: 100%;
-}
-.header-propos>h1 {
-    font-size: 30px;
+    /*!
+    =================================================================================================================================
+        *A PROPOS
+    =================================================================================================================================
+    */
+    section.a-propos {
+        flex-wrap: wrap;
+        height: auto;
+        width: 80vw;
+        padding-bottom: 20px;
     }
-.header-propos>p {
-font-size: 15px;
+
+    .propos-msg{
+        width: 100%;
+        height: 90%;
+        align-items: start;
+    }
+
+    .msg-txt{
+        width: auto;
+        height: auto;
+        margin: 0 ;
+    }
+
+    .propos-img{
+        width: 100%;
+        height: 90%;
+    } 
+
+    .msg-txt .button {
+        font-size: 2.2vw;
+    }
 }
-
-
- }
 
 
 
@@ -148,55 +155,16 @@ font-size: 15px;
         padding: 5px 20px;
         font-size: 3vw;
     }
-/*!
-=================================================================================================================================
-      *A PROPOS
-=================================================================================================================================
-*/
-section.a-propos {
-    height:auto;
-    padding-top: 20px;
-}
-.propos-contain{
-    flex-wrap: wrap;
-}
-.propos-msg{
-    width: 100%;
-    height: 90%;
-    display: flex;
-    margin: 20px auto;
-    order: 1;
 
-}
-.propos-img{
-    width: 80%;
-    height: 90%;
-    position: relative;
-    display: flex;
-    margin: auto;
-    order: 2;
-    margin-bottom: 40px;
-}
-.propos-img img{
-    width: 75vw;
-    height: 60vh;
-}
-.header-propos {
-    width: 90vw;
-    margin-bottom: 10px;
-}
-.header-propos>h1 {
-    font-size: 5.5vw;
-}
-.header-propos>p {
-    font-size: 3.5vw;
-    text-align: justify;
-    margin: 0;
-    padding: 0 10px;
-}
-.header-propos>p span {
-    font-size: 3.6vw;
-}
+    /*!
+    =================================================================================================================================
+        *A PROPOS
+    =================================================================================================================================
+    */
+    .propos-img img{
+        height: 50vh;
+    } 
+    
  }
 
 
