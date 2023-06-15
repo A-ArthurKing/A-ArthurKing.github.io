@@ -21,27 +21,3 @@ window.addEventListener("scroll", () => {
   }
 });
 
-
-var textElement = document.querySelector('h1.title');
-var animation = anime({
-  targets: textElement,
-  opacity: 1,
-  translateY: 10,
-  duration: 1000,
-  easing: 'easeInOutQuad'
-});
-
-
-var swiper = new Swiper('.swiper-container', {
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  autoplay: {
-    delay: 5000,
-  },
-});
