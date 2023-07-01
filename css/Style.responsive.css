@@ -1,4 +1,5 @@
 @media screen and (max-width:1024px) {
+
     /*!
     =================================================================================================================================
         *A PROPOS
@@ -7,9 +8,9 @@
     section.a-propos {
         height: auto;
         margin-bottom: 40px;
-    }   
-        
-    .propos-msg{
+    }
+
+    .propos-msg {
         width: 50%;
     }
 
@@ -18,34 +19,40 @@
     }
 
     .header-propos>p {
-        padding: 0 ;
+        padding: 0;
     }
+
     /*
     =================================================================================================================================
         *Services
     =================================================================================================================================
     */
-    .img-services ul :nth-child(1){
+    .img-services ul :nth-child(1) {
         top: 30px;
         left: -65px;
     }
-    .img-services ul :nth-child(2){
+
+    .img-services ul :nth-child(2) {
         top: 150px;
         left: -110px;
     }
-    .img-services ul :nth-child(3){
+
+    .img-services ul :nth-child(3) {
         top: 280px;
         left: -25px;
     }
-    .img-services ul :nth-child(4){
+
+    .img-services ul :nth-child(4) {
         top: 30px;
         right: -80px;
     }
-    .img-services ul :nth-child(5){
+
+    .img-services ul :nth-child(5) {
         top: 150px;
         right: -125px;
     }
-    .img-services ul :nth-child(6){
+
+    .img-services ul :nth-child(6) {
         top: 280px;
         right: -15px;
     }
@@ -53,6 +60,7 @@
 
 
 @media screen and (max-width:900px) {
+
     /*!
     =================================================================================================================================
         *HEADER
@@ -61,7 +69,7 @@
     nav ul li a {
         font-size: 2vw;
     }
-  
+
     /*!
     =================================================================================================================================
         *A PROPOS
@@ -74,22 +82,22 @@
         padding-bottom: 20px;
     }
 
-    .propos-msg{
+    .propos-msg {
         width: 100%;
         height: 90%;
         align-items: start;
     }
 
-    .msg-txt{
+    .msg-txt {
         width: auto;
         height: auto;
-        margin: 0 ;
+        margin: 0;
     }
 
-    .propos-img{
+    .propos-img {
         width: 100%;
         height: 90%;
-    } 
+    }
 
     .msg-txt .button {
         font-size: 2.2vw;
@@ -99,7 +107,8 @@
 
 
 
- @media screen and (max-width:768px) {
+@media screen and (max-width:768px) {
+
     /*!
     =================================================================================================================================
         *HEADER
@@ -107,19 +116,22 @@
     */
     .header {
         background-color: white;
-        height: 30vh;
+        height: 100vh;
         width: 100vw;
         z-index: 1;
     }
+
     Nav {
         z-index: 999999999;
         width: 100%;
     }
+
     #logo {
         position: absolute;
         z-index: 777;
         left: 20px
     }
+
     .menu-hamburger {
         display: block;
         position: absolute;
@@ -127,6 +139,7 @@
         right: 40px;
         font-size: 3vh;
     }
+
     .nav-links {
         position: absolute;
         z-index: 9999;
@@ -141,12 +154,14 @@
         background-color: rgba(0, 0, 0, 0.55);
         backdrop-filter: blur(7px);
         margin-left: -200%;
-        transition: all 0.5s ease; 
+        transition: all 0.5s ease;
     }
+
     .nav-links .button {
         margin: auto;
         font-size: 4vh;
     }
+
     nav ul {
         display: flex;
         flex-direction: column;
@@ -154,34 +169,49 @@
         height: 75%;
         width: 100%;
     }
+
     nav ul li {
         margin: auto;
         font-size: 3vh;
     }
+
     nav ul li a {
         font-size: 3vh;
     }
+
     #logo {
         padding-left: 28px;
         font-family: Million Harmony;
     }
+
     #logo img {
         width: 10vw;
-        height:10vw;
-    } 
+        height: 10vw;
+    }
+
     .mobile-menu {
         margin-left: -20px;
     }
+
     .title {
         font-size: 7vw;
     }
+
     .sstitle {
         font-size: 4vw;
     }
+
     .header-txt .button {
         margin-top: 15px;
         padding: 5px 20px;
         font-size: 3vw;
+    }
+
+    .header {
+        background-image: url(../images/b-medium.jpg);
+        background-size: cover;
+        background-position: right;
+
     }
 
     /*!
@@ -189,49 +219,57 @@
         *A PROPOS
     =================================================================================================================================
     */
-    .propos-img img{
-        height: 50vh;
-    } 
- 
+    .propos-img img {
+        height: 30vh;
+    }
+
+
+    .msg-txt .button {
+        padding: 5px 20px;
+        font-size: 3vw;
+    }
+
     /*
     =================================================================================================================================
         *Galérie
     =================================================================================================================================
     */
 
-    #galérie{
+    #galérie {
         width: 60vw;
         height: auto;
         max-width: 100%;
         margin: auto;
     }
 
-    .ma-galerie{
+    .ma-galerie {
         width: 100%;
-        grid-template-columns: repeat(1,80vw);
+        grid-template-columns: repeat(1, 80vw);
         max-width: 100%;
     }
 
-    .gal-box1 , .gal-box2 , .gal-box3 , .gal-box4 ,
-    .gal-box5 , .gal-box6 , .gal-box7 , .gal-box8{
-        background-color:#e6aac1;
+    .gal-box1,
+    .gal-box2,
+    .gal-box3,
+    .gal-box4,
+    .gal-box5,
+    .gal-box6,
+    .gal-box7,
+    .gal-box8 {
+        background-color: #e6aac1;
         height: 200px;
         width: 80vw;
     }
 
-    .gal-box1{
+    .gal-box1 {
         grid-column: 1;
         width: auto;
     }
- }
+}
 
 
- @media screen and (max-width:614px) {
-
- }
+@media screen and (max-width:614px) {}
 
 
 
- @media screen and (max-width:425px) {
-
- }
+@media screen and (max-width:425px) {}

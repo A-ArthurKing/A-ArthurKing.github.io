@@ -26,7 +26,7 @@
     text-decoration: none;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -39,9 +39,32 @@ a {
     box-sizing: border-box;
 }
 
-body{
+body {
     background: aliceblue;
 }
+
+.revelx {
+    transform: translateX(-30px);
+    opacity: 0;
+}
+
+.revelx-visibleX {
+    transform: translateX(0px);
+    opacity: 100%;
+}
+
+.revely {
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: .3s ease-in;
+}
+
+.revelx-visibleY {
+    transform: translateX(0px);
+    opacity: 100%;
+    transition: .3s ease-in;
+}
+
 /*!
 =================================================================================================================================
      *HEADER
@@ -115,20 +138,21 @@ Nav {
     transition: background-color 0.5s ease, height 0.5s ease;
 }
 
-.scroll{
+.scroll {
     background-color: aliceblue;
 }
 
-#logo  {
+#logo {
     border-radius: 50px;
     padding-top: 15px;
-}   
+}
+
 #logo img {
     width: 7vw;
-    height:7vw;
-} 
+    height: 7vw;
+}
 
-.nav-links{
+.nav-links {
     display: flex;
     align-items: center;
     gap: 4vw;
@@ -139,8 +163,8 @@ nav ul {
     justify-content: space-between;
     cursor: pointer;
     width: 90%;
-    min-width:80% ;
-    max-width:auto ;
+    min-width: 80%;
+    max-width: auto;
     gap: 3vw;
 }
 
@@ -157,7 +181,7 @@ nav ul li a {
 
 nav ul li a:hover {
     transition: all 0.3 ease-out;
-    color:#f21268;
+    color: #f21268;
 }
 
 nav button {
@@ -221,7 +245,7 @@ nav button:hover {
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width:60vw;
+    width: 60vw;
 }
 
 .title {
@@ -288,14 +312,15 @@ section.a-propos {
     align-items: center;
 }
 
-.propos-msg{
+.propos-msg {
     width: 45%;
     height: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.msg-txt{
+
+.msg-txt {
     width: auto;
     height: auto;
     margin: 0 0 0 20px;
@@ -306,16 +331,19 @@ section.a-propos {
     color: #F2789F;
     margin-bottom: 10px;
 }
+
 .msg-txt>p {
     font-size: 18px;
     margin: 13px 0;
 }
+
 .msg-txt>p>span {
     color: #F2789F;
     font-weight: bold;
     padding-right: 5px;
     font-size: 20px;
 }
+
 .msg-txt .button {
     display: flex;
     margin: 20px 0 0 0;
@@ -328,41 +356,43 @@ section.a-propos {
     background-color: transparent;
     border: 2px solid;
     color: white;
-    background-color:#F2789F;
+    background-color: #F2789F;
     font-size: 1.5vw;
     transition: all 0.6s ease-out;
     border: 1px solid white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
 .header-txt .button:hover {
     background-color: #e6aac1;
     color: white;
     border: 1px solid #F2789F;
-}    
+}
 
-.propos-img{
+.propos-img {
     width: 45%;
     height: 90%;
     position: relative;
     display: flex;
-} 
+}
 
-.propos-img img{
+.propos-img img {
     width: 100%;
     height: 70vh;
     margin: auto;
     object-fit: cover;
     object-position: center;
-    box-shadow: -18px 21px 5px 2px rgba(242,120,159,0.61);
-    -webkit-box-shadow: -18px 21px 5px 2px rgba(242,120,159,0.61);
-    -moz-box-shadow: -18px 21px 5px 2px rgba(242,120,159,0.61);
+    box-shadow: -18px 21px 5px 2px rgba(242, 120, 159, 0.61);
+    -webkit-box-shadow: -18px 21px 5px 2px rgba(242, 120, 159, 0.61);
+    -moz-box-shadow: -18px 21px 5px 2px rgba(242, 120, 159, 0.61);
 }
+
 /*
 =================================================================================================================================
       *A PROPOS
 =================================================================================================================================
 */
-.propos-box{
+.propos-box {
     display: flex;
     height: 18vh;
     width: 100%;
@@ -384,7 +414,7 @@ section.a-propos {
     opacity: 50%;
 }
 
-.box-itm{
+.box-itm {
     width: 90%;
     display: flex;
     flex-wrap: nowrap;
@@ -392,7 +422,7 @@ section.a-propos {
     margin: auto;
 }
 
-.box{
+.box {
     height: 80px;
     width: 150px;
     background-color: #e6aac18c;
@@ -401,7 +431,7 @@ section.a-propos {
     margin: auto;
 }
 
-.box h1{
+.box h1 {
     color: #f21268;
     height: 50%;
     display: flex;
@@ -409,7 +439,7 @@ section.a-propos {
     justify-content: center;
 }
 
-.box p{
+.box p {
     color: white;
     align-items: center;
     justify-content: center;
@@ -422,37 +452,41 @@ section.a-propos {
 =================================================================================================================================
 */
 
-.services{
+.services {
     height: 100vh;
     width: 100vw;
     max-width: 100%;
     max-height: 100%;
-    background-color:#e6aac0;
+    background-color: #e6aac0;
     padding-top: 50px;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
     align-content: flex-end;
 }
-div.services-txt{
+
+div.services-txt {
     height: 20%;
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .services-txt h1 {
     font-size: 40px;
     color: white;
 }
-div.box-service{
+
+div.box-service {
     height: 80%;
     width: 100vw;
     max-width: 100%;
     display: flex;
 }
-div.img-services{
-    height:30vw;
+
+div.img-services {
+    height: 30vw;
     width: 30vw;
     max-width: 100%;
     border-radius: 50%;
@@ -462,10 +496,10 @@ div.img-services{
     background-image: url(../images/massage.jpg);
     background-position: right;
     background-size: cover;
-    box-shadow: -6px 6px 5px 2px rgba(242,120,159,0.61);
+    box-shadow: -6px 6px 5px 2px rgba(242, 120, 159, 0.61);
 }
 
-.img-services ul li a{
+.img-services ul li a {
     background-color: white;
     color: #f21268;
     padding: 5px 15px;
@@ -474,41 +508,41 @@ div.img-services{
     font-weight: bolder;
 }
 
-.img-services ul li a{
-    box-shadow: -6px 6px 5px 2px rgba(242,120,159,0.61);
+.img-services ul li a {
+    box-shadow: -6px 6px 5px 2px rgba(242, 120, 159, 0.61);
 }
 
-.img-services li{
+.img-services li {
     position: absolute;
 }
 
-.img-services ul :nth-child(1){
+.img-services ul :nth-child(1) {
     top: 20px;
     left: -30px;
 }
 
-.img-services ul :nth-child(2){
+.img-services ul :nth-child(2) {
     top: 150px;
     left: -110px;
 }
 
-.img-services ul :nth-child(3){
+.img-services ul :nth-child(3) {
     top: 300px;
     left: -60px;
 }
 
-.img-services ul :nth-child(4){
+.img-services ul :nth-child(4) {
     top: 20px;
     right: -45px;
 }
 
 
-.img-services ul :nth-child(5){
+.img-services ul :nth-child(5) {
     top: 150px;
     right: -125px;
 }
 
-.img-services ul :nth-child(6){
+.img-services ul :nth-child(6) {
     top: 300px;
     right: -50px;
 }
@@ -518,12 +552,12 @@ div.img-services{
       *Galérie
 =================================================================================================================================
 */
-#galérie{
+#galérie {
     width: 100vw;
     height: 100vh;
     max-width: 100%;
     max-height: 100%;
-    background-color:aliceblue;
+    background-color: aliceblue;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -538,75 +572,81 @@ div.img-services{
     align-items: flex-end;
 }
 
-.gal-txt h1{
+.gal-txt h1 {
     font-size: 40px;
-    color:#F2789F;
+    color: #F2789F;
 }
 
-.ma-galerie{
+.ma-galerie {
     margin: 30px auto;
     height: auto;
     max-width: 1000px;
     width: 90%;
     display: grid;
-    grid-template-columns: repeat(auto-fill,300px);
+    grid-template-columns: repeat(auto-fill, 300px);
     grid-gap: 5px;
     justify-content: center;
 }
 
-.gal-box1 , .gal-box2 , .gal-box3 , .gal-box4 ,
-.gal-box5 , .gal-box6 , .gal-box7 , .gal-box8{
-    background-color:#e6aac1;
+.gal-box1,
+.gal-box2,
+.gal-box3,
+.gal-box4,
+.gal-box5,
+.gal-box6,
+.gal-box7,
+.gal-box8 {
+    background-color: #e6aac1;
     height: 200px;
     width: 300px;
 }
 
-.gal-box1{
-    background-image:url(../images/g1.jpg);
+.gal-box1 {
+    background-image: url(../images/g1.jpg);
     background-position: center;
     background-size: cover;
     grid-column: 1/3;
     width: auto;
 }
 
-.gal-box2{
-    background-image:url(../images/g3.jpg);
+.gal-box2 {
+    background-image: url(../images/g3.jpg);
     background-position: center;
     background-size: cover;
 }
 
-.gal-box3{
-    background-image:url(../images/g2.jpg);
+.gal-box3 {
+    background-image: url(../images/g2.jpg);
     background-position: center;
     background-size: cover;
 }
 
-.gal-box4{
-    background-image:url(../images/g4.jpg);
+.gal-box4 {
+    background-image: url(../images/g4.jpg);
     background-position: center;
     background-size: cover;
 }
 
-.gal-box5{
-    background-image:url(../images/g5.jpg);
+.gal-box5 {
+    background-image: url(../images/g5.jpg);
     background-position: center;
     background-size: cover;
 }
 
-.gal-box6{
-    background-image:url(../images/g6.jpg);
+.gal-box6 {
+    background-image: url(../images/g6.jpg);
     background-position: center;
     background-size: cover;
 }
 
-.gal-box7{
-    background-image:url(../images/g7.jpg);
+.gal-box7 {
+    background-image: url(../images/g7.jpg);
     background-position: center;
     background-size: cover;
 }
 
-.gal-box8{
-    background-image:url(../images/g8.jpg);
+.gal-box8 {
+    background-image: url(../images/g8.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -617,19 +657,19 @@ div.img-services{
 =================================================================================================================================
 */
 
-.nos-client{
+.nos-client {
     width: 100vw;
     height: 100vh;
     max-width: 100%;
     max-height: 100%;
-    background-color:#e6aac1;
+    background-color: #e6aac1;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
-.client-txt{
+.client-txt {
     height: 20%;
     width: 100vw;
     display: flex;
@@ -637,12 +677,12 @@ div.img-services{
     align-items: flex-end;
 }
 
-.client-txt h1  {
+.client-txt h1 {
     font-size: 40px;
-    color:white;
+    color: white;
 }
 
-.commentaires{
+.commentaires {
     height: 70%;
     width: 80%;
     display: flex;
@@ -653,70 +693,71 @@ div.img-services{
     background-size: cover;
     position: relative;
 }
-.commentaires ::after{
+
+.commentaires ::after {
     content: "";
     backdrop-filter: blur(10px);
 }
 
-.cmt{
+.cmt {
     height: 200px;
-    width: 180px; 
-    background-color:aliceblue;
+    width: 180px;
+    background-color: aliceblue;
     display: flex;
     position: relative;
     transition: all 0.6s ease-in-out;
     overflow: hidden;
 }
 
-.cmt:hover::after{
+.cmt:hover::after {
     position: absolute;
     content: "";
-    background-color: rgba(0, 0, 0, 0.495) ;
+    background-color: rgba(0, 0, 0, 0.495);
     height: 165px;
-    width: 180px; 
+    width: 180px;
     display: flex;
     margin: auto;
     transition: all 0.6s ease-in-out;
     z-index: 3;
 }
 
-.cm1{
+.cm1 {
     background-image: url(../images/c.jpg);
     background-position: center;
     background-size: cover;
 }
 
-.cm2{
+.cm2 {
     background-image: url(../images/c1.jpg);
     background-position: center;
     background-size: cover;
 }
 
-.cm3{
+.cm3 {
     background-image: url(../images/c2.jpg);
     background-position: center;
     background-size: cover;
 }
 
-.cm4{
+.cm4 {
     background-image: url(../images/c3.jpg);
     background-position: center;
     background-size: cover;
 }
 
-.cm5{
+.cm5 {
     background-image: url(../images/c4.jpg);
     background-position: center;
     background-size: cover;
 }
 
-.cm2{
+.cm2 {
     background-image: url(../images/c4.jpg);
     background-position: center;
     background-size: cover;
 }
 
-.msg{
+.msg {
     background-color: white;
     display: flex;
     height: 20%;
@@ -726,7 +767,7 @@ div.img-services{
 }
 
 .msg h1 {
-    color:#F2789F;
+    color: #F2789F;
     margin: auto;
     z-index: 6;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;

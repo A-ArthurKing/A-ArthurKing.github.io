@@ -21,3 +21,15 @@ window.addEventListener("scroll", () => {
   }
 });
 
+
+const options = {
+  root:null,
+  rootMargin: "0px",
+  threshold: .1,
+};
+const handelIntersect = function () {
+  console.log("handelIntersect");
+}
+let observer = new IntersectionObserver(handelIntersect, options);
+
+
