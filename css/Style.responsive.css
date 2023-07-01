@@ -129,7 +129,8 @@
     #logo {
         position: absolute;
         z-index: 777;
-        left: 20px
+        left: 20px;
+        font-size: 4vw;
     }
 
     .menu-hamburger {
@@ -137,7 +138,7 @@
         position: absolute;
         z-index: 999999;
         right: 40px;
-        font-size: 3vh;
+        font-size: 4.5vh;
     }
 
     .nav-links {
@@ -193,12 +194,16 @@
         margin-left: -20px;
     }
 
+    .header-txt {
+        width: 90vw;
+    }
+
     .title {
-        font-size: 7vw;
+        font-size: 9vw;
     }
 
     .sstitle {
-        font-size: 4vw;
+        font-size: 5vw;
     }
 
     .header-txt .button {
@@ -210,7 +215,7 @@
     .header {
         background-image: url(../images/b-medium.jpg);
         background-size: cover;
-        background-position: right;
+        background-position: center;
 
     }
 
@@ -219,6 +224,15 @@
         *A PROPOS
     =================================================================================================================================
     */
+    .propos-msg {
+        width: 100VW;
+        height: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
     .propos-img img {
         height: 30vh;
     }
