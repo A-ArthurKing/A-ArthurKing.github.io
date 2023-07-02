@@ -152,6 +152,10 @@ Nav {
     height: 7vw;
 }
 
+#logo2 {
+    display: none;
+}
+
 .nav-links {
     display: flex;
     align-items: center;
@@ -224,7 +228,6 @@ nav button:hover {
     background-image: url(../images/b-medium.jpg);
     background-size: cover;
     background-position: left center;
-    position: relative;
     position: relative;
     z-index: 79;
 }

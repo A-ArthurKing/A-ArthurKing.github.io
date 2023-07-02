@@ -33,3 +33,12 @@ const handelIntersect = function () {
 let observer = new IntersectionObserver(handelIntersect, options);
 
 
+window.addEventListener('resize', function() {
+  if (window.innerWidth < 768) {
+    document.getElementById('myImage').src = 'image2.jpg';
+    document.getElementById('myImage').alt = 'Image 2';
+  } else {
+    document.getElementById('myImage').src = 'image1.jpg';
+    document.getElementById('myImage').alt = 'Image 1';
+  }
+});

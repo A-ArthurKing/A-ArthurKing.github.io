@@ -115,6 +115,7 @@
     =================================================================================================================================
     */
     .header {
+        background-image: url(../images/a-large.jpg);
         background-color: white;
         height: 100vh;
         width: 100vw;
@@ -186,8 +187,21 @@
     }
 
     #logo img {
-        width: 10vw;
-        height: 10vw;
+        width: 13vw;
+        height: 13vw;
+        padding-top: 5px;
+    }
+
+    #logo2 {
+        display: flex;
+    }
+
+    #logo2 img {
+        width: 25vw;
+        height: 25vw;
+        margin: auto;
+        display: flex;
+        color: white;
     }
 
     .mobile-menu {
@@ -195,15 +209,16 @@
     }
 
     .header-txt {
-        width: 90vw;
+        width: 100vw;
+        max-width: 100%;
     }
 
     .title {
-        font-size: 9vw;
+        font-size: 10vw;
     }
 
     .sstitle {
-        font-size: 5vw;
+        font-size: 6vw;
     }
 
     .header-txt .button {
