@@ -115,8 +115,9 @@
     =================================================================================================================================
     */
     .header {
-        background-image: url(../images/a-large.jpg);
+        background-image: url(../images/bg11.jpg);
         background-color: white;
+        background-position: left center;
         height: 100vh;
         width: 100vw;
         z-index: 1;
@@ -227,12 +228,7 @@
         font-size: 3vw;
     }
 
-    .header {
-        background-image: url(../images/b-medium.jpg);
-        background-size: cover;
-        background-position: center;
 
-    }
 
     /*!
     =================================================================================================================================
