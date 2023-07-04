@@ -230,6 +230,7 @@ nav button:hover {
     background-position: left center;
     position: relative;
     z-index: 79;
+    color: aliceblue
 }
 
 .header::before {

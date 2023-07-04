@@ -117,7 +117,7 @@
     .header {
         background-image: url(../images/bg11.jpg);
         background-color: white;
-        background-position: left center;
+        background-position: right;
         height: 100vh;
         width: 100vw;
         z-index: 1;
@@ -193,17 +193,7 @@
         padding-top: 5px;
     }
 
-    #logo2 {
-        display: flex;
-    }
 
-    #logo2 img {
-        width: 25vw;
-        height: 25vw;
-        margin: auto;
-        display: flex;
-        color: white;
-    }
 
     .mobile-menu {
         margin-left: -20px;
