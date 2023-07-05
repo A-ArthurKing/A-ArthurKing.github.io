@@ -63,9 +63,7 @@ Nav {
     transition: background-color 0.5s ease, height 0.5s ease;
 }
 
-.scroll {
-    background-color: aliceblue;
-}
+
 
 #logo {
     border-radius: 50px;
@@ -99,7 +97,7 @@ nav ul li a {
     font-weight: lighter;
     font-size: 1.6vw;
     transition: all 0.3;
-    color: #F2789F;
+    color: white;
     font-weight: bold;
     transition: all 0.5s ease-out;
 }
@@ -111,20 +109,23 @@ nav ul li a:hover {
 
 nav button {
     font-family: Bell MT;
-    padding: 5px 20px;
+    padding: 5px 25px;
     cursor: pointer;
-    background-color: #F2789F;
+    background: rgb(242, 18, 96);
+    background: linear-gradient(140deg, rgba(242, 18, 96, 1) 0%, rgba(230, 170, 192, 1) 22%, rgba(233, 200, 212, 1) 37%, rgba(230, 170, 192, 1) 56%, rgba(231, 135, 168, 1) 72%, rgba(242, 18, 96, 1) 100%);
+
     border: 2px solid;
     color: white;
     font-size: 1.5vw;
     transition: all 0.6s ease-in-out;
     border: 1px solid rgb(202, 122, 122);
+    border-radius: 15px;
 }
 
 nav button:hover {
-    background-color: white;
-    color: #e6aac1;
-    border: 1px solid #F2789F;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px 5px white;
 }
 
 .menu-hamburger {
@@ -192,7 +193,7 @@ nav button:hover {
     justify-content: space-around;
     flex-direction: column;
     height: 60%;
-    width: 80%;
+    width: 85%;
     margin: auto;
     border-radius: 15px;
 
@@ -200,6 +201,7 @@ nav button:hover {
 
 .elementform h2 {
     color: white;
+    text-align: center;
 }
 
 #firstnameuser {
@@ -209,6 +211,12 @@ nav button:hover {
 }
 
 #lastnameuser {
+    width: 210px;
+    height: 30px;
+    text-align: center;
+}
+
+#soinsuser {
     width: 210px;
     height: 30px;
     text-align: center;
