@@ -13,6 +13,9 @@
     src: url("/Police\ d\'écriture/Million Harmony.otf") format("opentype");
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
 /*!
 =================================================================================================================================
      *GENERAL
@@ -389,6 +392,12 @@ section.a-propos {
     box-shadow: -18px 21px 5px 2px rgba(242, 120, 159, 0.61);
     -webkit-box-shadow: -18px 21px 5px 2px rgba(242, 120, 159, 0.61);
     -moz-box-shadow: -18px 21px 5px 2px rgba(242, 120, 159, 0.61);
+    transition: all 0.6s ease-out;
+}
+
+.propos-img img:hover {
+    transform: scale();
+    transition: all 0.6s ease-out;
 }
 
 /*
@@ -456,99 +465,153 @@ section.a-propos {
 =================================================================================================================================
 */
 
+
 .services {
-    height: 100vh;
-    width: 100vw;
-    max-width: 100%;
-    max-height: 100%;
-    background-color: #e6aac0;
-    padding-top: 50px;
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-end;
-    align-content: flex-end;
+    padding: 0 35px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #e6aac1;
 }
 
-div.services-txt {
+
+.service-txt {
     height: 20%;
     width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.service-txt h1 {
+    font-size: 40px;
+    color: white;
+}
+
+.wrapper {
+    max-width: 1100px;
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.wrapper i {
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+}
+
+.wrapper i:active {
+    transform: translateY(-50%) scale(0.85);
+}
+
+.wrapper i:first-child {
+    left: -22px;
+}
+
+.wrapper i:last-child {
+    right: -22px;
+}
+
+.wrapper .carousel {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    border-radius: 8px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel.no-transition {
+    scroll-behavior: auto;
+}
+
+.carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+
+.carousel.dragging .card {
+    cursor: grab;
+    user-select: none;
+}
+
+.carousel :where(.card, .img) {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.services-txt h1 {
-    font-size: 40px;
-    color: white;
+.carousel .card {
+    scroll-snap-align: start;
+    height: 342px;
+    list-style: none;
+    background: #fff;
+    cursor: pointer;
+    padding-bottom: 15px;
+    flex-direction: column;
+    border-radius: 8px;
 }
 
-div.box-service {
-    height: 80%;
-    width: 100vw;
-    max-width: 100%;
-    display: flex;
-}
-
-div.img-services {
-    height: 30vw;
-    width: 30vw;
-    max-width: 100%;
+.carousel .card .img {
+    background: pink;
+    height: 225px;
+    width: 225px;
     border-radius: 50%;
-    display: flex;
-    margin: 3px auto;
-    position: relative;
-    background-image: url(../images/massage.jpg);
-    background-position: right;
-    background-size: cover;
-    box-shadow: -6px 6px 5px 2px rgba(242, 120, 159, 0.61);
 }
 
-.img-services ul li a {
-    background-color: white;
-    color: #f21268;
-    padding: 5px 15px;
-    border-radius: 15px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: bolder;
+.card .img img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
 }
 
-.img-services ul li a {
-    box-shadow: -6px 6px 5px 2px rgba(242, 120, 159, 0.61);
+.carousel .card h2 {
+    font-weight: 500;
+    font-size: 1.56rem;
+    margin: 30px 0 5px;
 }
 
-.img-services li {
-    position: absolute;
+.carousel .card span {
+    color: #6A6D78;
+    font-size: 1.31rem;
 }
 
-.img-services ul :nth-child(1) {
-    top: 20px;
-    left: -30px;
+.btnvr {
+    color: white;
+    background: rgb(242, 18, 96);
+    background: linear-gradient(140deg, rgba(242, 18, 96, 1) 0%, rgba(230, 170, 192, 1) 22%, rgba(233, 200, 212, 1) 37%, rgba(230, 170, 192, 1) 56%, rgba(231, 135, 168, 1) 72%, rgba(242, 18, 96, 1) 100%);
+    font-weight: bold;
+    border-radius: 15PX;
+    padding: 7px 50px;
+    transition: all 0.3s ease-in-out;
 }
 
-.img-services ul :nth-child(2) {
-    top: 150px;
-    left: -110px;
-}
-
-.img-services ul :nth-child(3) {
-    top: 300px;
-    left: -60px;
-}
-
-.img-services ul :nth-child(4) {
-    top: 20px;
-    right: -45px;
-}
-
-
-.img-services ul :nth-child(5) {
-    top: 150px;
-    right: -125px;
-}
-
-.img-services ul :nth-child(6) {
-    top: 300px;
-    right: -50px;
+.btnvr:hover {
+    color: white;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px 5px white;
 }
 
 /*
