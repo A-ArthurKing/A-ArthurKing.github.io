@@ -506,7 +506,7 @@ section.a-propos {
     position: absolute;
     text-align: center;
     line-height: 50px;
-    background: #fff;
+    background-color: aliceblue;
     border-radius: 50%;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
     transform: translateY(-50%);
@@ -565,7 +565,7 @@ section.a-propos {
     scroll-snap-align: start;
     height: 342px;
     list-style: none;
-    background: #fff;
+    background-color: aliceblue;
     cursor: pointer;
     padding-bottom: 15px;
     flex-direction: column;
