@@ -668,60 +668,69 @@ section.a-propos {
     background-color: #e6aac1;
     height: 200px;
     width: 300px;
+    overflow: hidden;
 }
 
 .gal-box1 {
-    background-image: url(../images/g1.jpg);
     background-position: center;
     background-size: cover;
     grid-column: 1/3;
     width: auto;
 }
 
-.gal-box1:hover {
-    transition: opacity .2s ease-in-out, transform .5s ease-in-out;
+.gal-box1 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform .5s;
 }
 
-.gal-box2 {
-    background-image: url(../images/g3.jpg);
-    background-position: center;
-    background-size: cover;
+.gal-box1 img:hover {
+    transform: scale(1.1);
 }
 
-.gal-box3 {
-    background-image: url(../images/g2.jpg);
-    background-position: center;
-    background-size: cover;
+.gal-box2 img {
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+    transition: transform .5s;
 }
 
-.gal-box4 {
-    background-image: url(../images/g4.jpg);
-    background-position: center;
-    background-size: cover;
+.gal-box2 img:hover {
+    transform: scale(1.1);
 }
 
-.gal-box5 {
-    background-image: url(../images/g5.jpg);
-    background-position: center;
-    background-size: cover;
+.gal-box3 img {
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+    transition: transform .5s;
 }
 
-.gal-box6 {
-    background-image: url(../images/g6.jpg);
-    background-position: center;
-    background-size: cover;
+.gal-box3 img:hover {
+    transform: scale(1.1);
 }
 
-.gal-box7 {
-    background-image: url(../images/g7.jpg);
-    background-position: center;
-    background-size: cover;
+.gal-box4 img {
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+    transition: transform .5s;
 }
 
-.gal-box8 {
-    background-image: url(../images/g8.jpg);
-    background-position: center;
-    background-size: cover;
+.gal-box4 img:hover {
+    transform: scale(1.1);
+}
+
+.gal-box5 img {
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+    transition: transform .5s;
+}
+
+.gal-box5 img:hover {
+    transform: scale(1.1);
 }
 
 /*
@@ -748,102 +757,12 @@ section.a-propos {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    color: #543b18;
+
 }
 
 .client-txt h1 {
     font-size: 40px;
-    color: white;
-}
-
-.commentaires {
-    height: 70%;
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-}
-
-.commentaires ::after {
-    content: "";
-    backdrop-filter: blur(10px);
-}
-
-.cmt {
-    height: 200px;
-    width: 180px;
-    background-color: aliceblue;
-    display: flex;
-    position: relative;
-    transition: all 0.6s ease-in-out;
-    overflow: hidden;
-}
-
-.cmt:hover::after {
-    position: absolute;
-    content: "";
-    background-color: rgba(0, 0, 0, 0.495);
-    height: 165px;
-    width: 180px;
-    display: flex;
-    margin: auto;
-    transition: all 0.6s ease-in-out;
-    z-index: 3;
-}
-
-.cm1 {
-    background-image: url(../images/c.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-.cm2 {
-    background-image: url(../images/c1.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-.cm3 {
-    background-image: url(../images/c2.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-.cm4 {
-    background-image: url(../images/c3.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-.cm5 {
-    background-image: url(../images/c4.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-.cm2 {
-    background-image: url(../images/c4.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-.msg {
-    background-color: white;
-    display: flex;
-    height: 20%;
-    width: 100%;
-    margin-top: 90%;
-
-}
-
-.msg h1 {
-    color: #F2789F;
-    margin: auto;
-    z-index: 6;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 /*!
@@ -857,7 +776,7 @@ footer {
     width: 100vw;
     max-width: 100%;
     background-color: #3e2a0f;
-    color: rgba(189, 184, 184, 0.862);
+    color: rgba(172, 167, 167, 0.862);
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -898,11 +817,11 @@ footer {
 
 .Lehahiahangel h1 {
     font-size: 1.5vw;
+    color: white;
 }
 
 .Lehahiahangel button {
     width: 150px;
-    height: 20px;
     font-family: Bell MT;
     padding: 3px 10px;
     cursor: pointer;
@@ -912,7 +831,6 @@ footer {
     font-size: 1.5vw;
     transition: all 0.3s ease-in-out;
     border: 1px solid #543b18;
-
 }
 
 .Lehahiahangel button:hover {
@@ -931,10 +849,11 @@ footer {
 
 .Nospages h1 {
     font-size: 1.5vw;
+    color: white;
 }
 
 .Nospages a {
-    color: rgba(189, 184, 184, 0.862);
+    color: rgba(172, 167, 167, 0.862);
 }
 
 .Nospages p:hover {
@@ -956,6 +875,7 @@ hr {
 
 .Nouscontacter h1 {
     font-size: 1.5vw;
+    color: white;
 }
 
 .Horraires {
@@ -968,4 +888,5 @@ hr {
 
 .Horraires h1 {
     font-size: 1.5vw;
+    color: white;
 }

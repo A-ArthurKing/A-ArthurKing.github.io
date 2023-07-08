@@ -222,6 +222,7 @@
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
+        overflow: hidden;
     }
 
     .part1 {
@@ -234,6 +235,9 @@
         align-items: flex-start;
     }
 
+    .part2 {
+        margin-bottom: 10px;
+    }
 
     .Lehahiahangel {
         width: 50%;
@@ -485,6 +489,7 @@
     .part2 {
         width: 80vw;
         max-width: 80%;
+        margin-bottom: 10px;
     }
 
     .Lehahiahangel {
@@ -493,11 +498,11 @@
     }
 
     .Lehahiahangel h1 {
-        font-size: 3vw;
+        font-size: 30px;
     }
 
     .Lehahiahangel button {
-        font-size: 2vw;
+        font-size: 25px;
     }
 
     .Nospages {
@@ -507,7 +512,7 @@
     }
 
     .Nospages h1 {
-        font-size: 3vw;
+        font-size: 30px;
     }
 
     .Nouscontacter {
@@ -515,7 +520,7 @@
     }
 
     .Nouscontacter h1 {
-        font-size: 3vw;
+        font-size: 30px;
     }
 
     .Horraires {
@@ -523,7 +528,7 @@
     }
 
     .Horraires h1 {
-        font-size: 3vw;
+        font-size: 30px;
     }
 }
 
