@@ -435,9 +435,7 @@
     .gal-box6,
     .gal-box7,
     .gal-box8 {
-        background-color: #e6aac1;
-        height: 200px;
-        width: 80vw;
+        margin: auto;
     }
 
     .gal-box1 {

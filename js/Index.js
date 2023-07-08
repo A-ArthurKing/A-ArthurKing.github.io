@@ -137,3 +137,47 @@ document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("scroll", infiniteScroll);
 wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 wrapper.addEventListener("mouseleave", autoPlay);
+
+
+
+
+
+
+
+
+
+const slider = document.querySelector('.slider');
+const témoignages = Array.from(document.querySelectorAll('.témoignage'));
+let currentIndex = 0;
+let isTransitioning = false;
+
+function nextSlide() {
+  if (isTransitioning) return;
+  isTransitioning = true;
+
+  témoignages[currentIndex].classList.remove('active');
+  currentIndex = (currentIndex + 1) % témoignages.length;
+  témoignages[currentIndex].classList.add('active');
+  slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+  // Ajouter un événement de transitionend pour réinitialiser isTransitioning
+  slider.addEventListener('transitionend', () => {
+    isTransitioning = false;
+  }, { once: true });
+}
+
+// Modifier la transition du slider
+slider.style.transition = 'transform 1s ease-in-out';
+
+// Démarrez le slider automatiquement
+let interval = setInterval(nextSlide, 5000);
+
+// Mettez en pause le slider lorsque survolé
+slider.addEventListener('mouseover', () => {
+  clearInterval(interval);
+});
+
+// Reprenez le slider lorsque le survol est terminé
+slider.addEventListener('mouseout', () => {
+  interval = setInterval(nextSlide, 5000);
+});
