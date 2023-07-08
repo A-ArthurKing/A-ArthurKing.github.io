@@ -134,9 +134,22 @@
 
     /*
     =================================================================================================================================
-        *Services
+        *FOOTER
     =================================================================================================================================
     */
+
+    footer {
+        height: 48vh;
+    }
+
+    .part1 {
+        height: 70%;
+    }
+
+    .part2 {
+        margin-top: 50px;
+        height: 10%;
+    }
 }
 
 
@@ -194,6 +207,49 @@
         grid-auto-columns: calc((100% / 2) - 9px);
     }
 
+    /*
+    =================================================================================================================================
+        *FOOTER
+    =================================================================================================================================
+    */
+
+    footer {
+        height: auto;
+        width: 100vw;
+        max-width: 100%;
+        background-color: #3e2a0f;
+        color: rgba(189, 184, 184, 0.862);
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .part1 {
+        height: auto;
+        width: 100vw;
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+
+    .Lehahiahangel {
+        width: 50%;
+    }
+
+    .Nospages {
+        width: 20%;
+    }
+
+    .Nouscontacter {
+        width: 50%;
+    }
+
+    .Horraires {
+        width: 20%;
+    }
 }
 
 
@@ -348,7 +404,6 @@
     }
 
 
-
     /*
     =================================================================================================================================
         *Galérie
@@ -409,6 +464,66 @@
         position: relative;
         transition: all 0.6s ease-in-out;
         overflow: hidden;
+    }
+
+    /*
+    =================================================================================================================================
+        *FOOTER
+    =================================================================================================================================
+    */
+
+    .part1 {
+        height: auto;
+        width: 100vw;
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .part2 {
+        width: 80vw;
+        max-width: 80%;
+    }
+
+    .Lehahiahangel {
+        width: 90%;
+        margin: auto;
+    }
+
+    .Lehahiahangel h1 {
+        font-size: 3vw;
+    }
+
+    .Lehahiahangel button {
+        font-size: 2vw;
+    }
+
+    .Nospages {
+        width: 90%;
+        margin: auto;
+
+    }
+
+    .Nospages h1 {
+        font-size: 3vw;
+    }
+
+    .Nouscontacter {
+        width: 90%;
+    }
+
+    .Nouscontacter h1 {
+        font-size: 3vw;
+    }
+
+    .Horraires {
+        width: 90%;
+    }
+
+    .Horraires h1 {
+        font-size: 3vw;
     }
 }
 

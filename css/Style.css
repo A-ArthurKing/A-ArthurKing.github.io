@@ -142,7 +142,7 @@ Nav {
 }
 
 .scroll {
-    background-color: aliceblue;
+    background-color: #3e2a0f;
 }
 
 #logo {
@@ -883,15 +883,6 @@ footer {
     align-items: center;
 }
 
-.part2 hr {
-    border: none;
-    border-top: 3px double #333;
-    color: #333;
-    overflow: visible;
-    text-align: center;
-    height: 5px;
-}
-
 .part2 span {
     cursor: pointer;
     padding: 10px 0;
@@ -910,7 +901,8 @@ footer {
 }
 
 .Lehahiahangel button {
-    width: 50%;
+    width: 150px;
+    height: 20px;
     font-family: Bell MT;
     padding: 3px 10px;
     cursor: pointer;
@@ -972,7 +964,6 @@ hr {
     width: 20%;
     gap: 10px;
     padding: 20px 0;
-
 }
 
 .Horraires h1 {
