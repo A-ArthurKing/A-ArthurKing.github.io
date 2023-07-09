@@ -327,11 +327,11 @@
 
     nav ul li {
         margin: auto;
-        font-size: 3vh;
+        font-size: 2.5vh;
     }
 
     nav ul li a {
-        font-size: 3vh;
+        font-size: 2.5vh;
         color: white;
     }
 
@@ -368,7 +368,7 @@
     .header-txt .button {
         margin-top: 15px;
         padding: 5px 20px;
-        font-size: 3vw;
+        font-size: 25px;
     }
 
 
@@ -394,7 +394,7 @@
 
     .msg-txt .button {
         padding: 5px 20px;
-        font-size: 3vw;
+        font-size: 25px;
     }
 
 
@@ -403,6 +403,25 @@
         *Services
     =================================================================================================================================
     */
+    .services {
+        height: auto;
+    }
+
+
+    .service-txt {
+        height: 10%;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .wrapper {
+        max-width: 1100px;
+        width: 100%;
+        position: relative;
+        margin: auto;
+    }
 
     .wrapper .carousel {
         grid-auto-columns: 100%;
@@ -497,7 +516,7 @@
     }
 
     .Lehahiahangel h1 {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .Lehahiahangel button {
@@ -511,7 +530,7 @@
     }
 
     .Nospages h1 {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .Nouscontacter {
@@ -519,7 +538,7 @@
     }
 
     .Nouscontacter h1 {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .Horraires {
@@ -527,7 +546,7 @@
     }
 
     .Horraires h1 {
-        font-size: 30px;
+        font-size: 20px;
     }
 }
 
