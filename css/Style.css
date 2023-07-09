@@ -180,15 +180,15 @@ nav ul li a {
     font-family: Bell MT;
     padding: 3px 10px;
     font-weight: lighter;
-    font-size: 1.6vw;
+    font-size: 20px;
     transition: all 0.3;
-    color: #543b18;
-    font-weight: bold;
+    color: white;
     transition: all 0.5s ease-out;
 }
 
 nav ul li a:hover {
     transition: all 0.3 ease-out;
+    box-shadow: 0 0 10px 5px white;
 }
 
 nav button {
@@ -203,9 +203,9 @@ nav button {
 }
 
 nav button:hover {
-    background-color: #543b18;
-    color: white;
-    border: 1px solid#543b18;
+    color: #3e2a0f;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px 5px white;
 }
 
 .menu-hamburger {
@@ -295,6 +295,7 @@ nav button:hover {
 .header-txt .button:hover {
     background-color: #3e2a0f;
     color: #F1DEC9;
+    box-shadow: 0 0 10px 5px white;
 }
 
 /*!
@@ -807,7 +808,7 @@ section.a-propos {
 }
 
 .témoignage p.temg {
-    font-size: 2vw;
+    font-size: 25px;
     width: 70%;
     text-align: center;
 }
@@ -819,7 +820,7 @@ section.a-propos {
 }
 
 .témoignage h3 {
-    font-size: 1.5vw;
+    font-size: 25px;
 }
 
 /*!
