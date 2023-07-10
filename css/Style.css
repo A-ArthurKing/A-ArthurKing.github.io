@@ -216,6 +216,7 @@ nav button:hover {
     color: white;
     cursor: pointer;
     display: none;
+    transition: all 0.2s ease;
 }
 
 .fa-regular {
