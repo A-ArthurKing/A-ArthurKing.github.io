@@ -125,6 +125,118 @@
         font-size: 3vw;
     }
 
+    /*!
+=================================================================================================================================
+     *CONTACT
+=================================================================================================================================
+*/
+    .contact {
+        height: 80%;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+
+    .elementcontact {
+        display: flex;
+        align-items: normal;
+        justify-content: space-evenly;
+        flex-direction: column;
+        height: 50%;
+        width: 65%;
+
+    }
+
+
+    .lcntct {
+        flex-wrap: wrap;
+    }
+
+    #firstnameuser {
+        width: 150px;
+        height: 15px;
+        text-align: left;
+        padding: 0 5px;
+    }
+
+    #txtnameuser {
+        width: 320px;
+        height: 20px;
+        text-align: left;
+        padding: 0 5px;
+    }
+
+    #lastnameuser {
+        width: 150px;
+        height: 15px;
+        text-align: left;
+        padding: 0 5px;
+    }
+
+    #soinsuser {
+        width: 210px;
+        height: 30px;
+        text-align: left;
+        padding: 0 5px;
+    }
+
+    .btnreserver {
+        color: white;
+        background-color: #F1DEC9;
+        font-weight: bold;
+        padding: 5px 20px;
+        transition: all 0.3s ease-in-out;
+        display: flex;
+        width: 100px;
+    }
+
+    .btnreserver:hover {
+        color: white;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0 0 10px 5px white;
+    }
+
+    ::placeholder {
+        color: black;
+        opacity: 20%;
+        text-align: left;
+        padding: 0 5px;
+    }
+
+    .coordonnée {
+        display: flex;
+        align-items: normal;
+        justify-content: space-around;
+        flex-direction: column;
+        height: 40%;
+        width: 65%;
+        margin: auto;
+        border-radius: 15px;
+        font-family: Bell MT;
+    }
+
+    .cd1,
+    .cd2,
+    .cd3 {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 10px;
+        border-bottom: 1px solid white;
+        padding-bottom: 10px;
+        transition: all 0.4s ease;
+        font-size: 15px;
+    }
+
+    .cd1:hover,
+    .cd2:hover,
+    .cd3:hover {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 10px;
+        border-bottom: 1px solid #543b18;
+        padding-left: 15px;
+        transition: all 0.4s ease;
+    }
 
 
 }

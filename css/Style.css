@@ -956,3 +956,14 @@ hr {
     font-size: 1.5vw;
     color: white;
 }
+
+.part2 p {
+    border-top: 1px solid white;
+    padding-top: 10px;
+    width: 70%;
+    text-align: center;
+}
+
+.part2 p span:hover {
+    color: white;
+}
