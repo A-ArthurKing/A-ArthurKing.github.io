@@ -1,0 +1,137 @@
+@media screen and (max-width:1024px) {}
+
+
+@media screen and (max-width:900px) {}
+
+
+
+
+@media screen and (max-width:768px) {
+
+    /*!
+    =================================================================================================================================
+        *HEADER
+    =================================================================================================================================
+    */
+    .header {
+        background-image: url(../images/b12.jpg);
+        background-color: white;
+        background-position: center;
+        height: 100vh;
+        width: 100vw;
+        z-index: 1;
+    }
+
+    .header::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        backdrop-filter: blur(10px);
+    }
+
+    Nav {
+        z-index: 999999999;
+        width: 100%;
+    }
+
+    #logo {
+        position: absolute;
+        z-index: 777;
+        left: 20px;
+        font-size: 4vw;
+    }
+
+    .menu-hamburger {
+        display: block;
+        position: absolute;
+        z-index: 999999;
+        right: 40px;
+        font-size: 4.5vh;
+        color: white;
+    }
+
+    .nav-links {
+        position: absolute;
+        z-index: 9999;
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        background-color: rgba(0, 0, 0, 0.55);
+        backdrop-filter: blur(7px);
+        margin-left: -200%;
+        transition: all 0.5s ease;
+    }
+
+    .nav-links .button {
+        margin: auto;
+        font-size: 4vh;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 75%;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: auto;
+        font-size: 3vh;
+    }
+
+    nav ul li a {
+        font-size: 3vh;
+    }
+
+    #logo {
+        padding-left: 28px;
+        font-family: Million Harmony;
+    }
+
+    #logo img {
+        width: 13vw;
+        height: 13vw;
+    }
+
+    .mobile-menu {
+        margin-left: -20px;
+    }
+
+    .header-txt {
+        width: 100vw;
+        max-width: 100%;
+    }
+
+    .title {
+        font-size: 10vw;
+    }
+
+    .sstitle {
+        font-size: 6vw;
+    }
+
+    .header-txt .button {
+        margin-top: 15px;
+        padding: 5px 20px;
+        font-size: 3vw;
+    }
+
+
+
+}
+
+
+@media screen and (max-width:614px) {}
+
+
+
+@media screen and (max-width:425px) {}
