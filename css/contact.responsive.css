@@ -184,7 +184,7 @@
         color: white;
         background-color: #F1DEC9;
         font-weight: bold;
-        padding: 5px 83px;
+        padding: 7px 83px;
         transition: all 0.3s ease-in-out;
         display: flex;
 
@@ -209,7 +209,7 @@
         justify-content: space-around;
         flex-direction: column;
         height: 40%;
-        width: 45%;
+        width: 65%;
         margin: auto;
         border-radius: 15px;
         font-family: Bell MT;
