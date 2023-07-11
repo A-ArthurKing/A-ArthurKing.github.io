@@ -970,5 +970,6 @@ hr {
 }
 
 .part2 p span:hover {
-    color: white;
+    border-bottom: 1px solid white;
+    padding-bottom: 2px;
 }
