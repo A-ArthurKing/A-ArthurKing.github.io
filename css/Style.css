@@ -900,11 +900,15 @@ footer {
     border: 1px solid #543b18;
 }
 
-.Lehahiahangel button:hover {
-    background-color: #543b18;
-    color: white;
+.Lehahiahangel button a {
+    color: #543b18;
 }
 
+.Lehahiahangel button:hover {
+    color: white;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 3px 1px white;
+}
 
 .Nospages {
     display: flex;
