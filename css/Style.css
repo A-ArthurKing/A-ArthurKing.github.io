@@ -462,6 +462,22 @@ section.a-propos {
     justify-content: center;
 }
 
+.top {
+    background-color: #e0ad72;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 5px;
+    z-index: 9999;
+}
+
+.top i {
+    color: white;
+}
+
+
 
 /*
 =================================================================================================================================
