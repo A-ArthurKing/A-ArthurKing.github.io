@@ -451,6 +451,7 @@ ul.bardenavigations{
     gap:5px;
     height:62%;
     width:90%;
+    cursor:default;
   }
   
   .cardprix-txt h2{
@@ -468,16 +469,15 @@ ul.bardenavigations{
   .cardprix-txt h3{
     position: absolute;
     bottom: 0;
-    font-size:25px;
+    font-size:18px;
     font-weight:bold;
     border-radius:5px;
     background-color: #C38154;
     border:1px solid #C38154;
     color:white;
-    width:60%;
-    padding:5px 10px;
-    font-size:20px;
-    cursor:pointer;
+    width:50%;
+    padding:8px 8px;
+    text-align: center;
     box-shadow: 8px 7px 11px -5px rgba(0,0,0,0.94);
   -webkit-box-shadow: 8px 7px 11px -5px rgba(0,0,0,0.94);
   -moz-box-shadow: 8px 7px 11px -5px rgba(0,0,0,0.94);
