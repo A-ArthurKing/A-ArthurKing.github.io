@@ -64,7 +64,6 @@
 }
 @media only screen and (max-width: 5550px) {
     /*=======* Galérie ========*/
-    /*=======* Galérie ========*/
     .ma-galerie {
         grid-template-columns: repeat(3, 25rem);
     }
@@ -478,7 +477,19 @@
             height: 300px;
             width: 100%;
             margin-bottom: 40px;
-
+    }
+    .nosprestations{
+        background-attachment:scroll;
+    }
+    .btnallprestations {
+        color: white;
+        background-color:#C38154;
+        font-weight: bold;
+        padding: 10px 20px;
+        transition: all 0.3s ease-in-out;
+        margin-top: 20px;
+        font-size: 18px;
+        border-radius: 15px;
     }
     /*=======* Galérie ========*/
     #galérie {
