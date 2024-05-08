@@ -582,7 +582,7 @@ ul.bardenavigations{
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: repeat(auto-fill, 250px);
+    grid-template-columns: repeat(auto-fill, 300px);
     justify-content: center;
     align-items: center;
     grid-gap: 15px;
@@ -593,15 +593,6 @@ ul.bardenavigations{
     position: relative;
   }
 
-.soins .image {
-    display: block;
-    height: 50%;
-    gap:3px;
-    width: 250px;
-    border-radius: 15px;    
-    background-color:#c38155;
-    height: 270px;  
-  }
 
   /*
 =================================================================================================================================
