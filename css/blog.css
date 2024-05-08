@@ -33,11 +33,12 @@ body{
     background-color: #694d45;
     transition: all 0.2s ease;
 }
-
 img {
-    background: url(../Images/All/Icones/img.png);
+    background: url(./Images/Icones/img.png);
     background-position: center;
     background-size: cover;
+    height: 100%;
+    width: 100%;
 }
 
 /*

@@ -35,7 +35,7 @@ body{
 }
 
 img {
-    background: url(../Images/Icones/img.png);
+    background: url(./Images/Icones/img.png);
     background-position: center;
     background-size: cover;
     height: 100%;

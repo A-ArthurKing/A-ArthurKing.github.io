@@ -59,6 +59,13 @@ a {
 body {
     background: aliceblue;
 }
+img {
+    background: url(./Images/Icones/img.png);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
 
 /*!
 =================================================================================================================================
