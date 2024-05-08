@@ -176,6 +176,7 @@ nav{
     font-size: 0.75rem;
     border-radius: 50px;
     font-weight: 600;
+    font-family: "Roboto", sans-serif;
 }
 .card-list .explication {
     background-color: #F7DFF5; 
@@ -185,9 +186,9 @@ nav{
     background-color: #C38154;
     color: white
 }
-.card-list .editor {
-    background-color: #F7DFF5; 
-    color: #205c20;
+.card-list .Recette {
+    background-color: #F1DEC9; 
+    color: #694d45;
 }
 .card-item h3 {
     color: #000;
