@@ -572,104 +572,13 @@ ul.bardenavigations{
     width: 90%;
   }
 
- 
-/*
-=================================================================================================================================
-     *Soins
-=================================================================================================================================
-*/
-.soins {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: repeat(auto-fill, 300px);
-    justify-content: center;
-    align-items: center;
-    grid-gap: 15px;
-    width: 80vw;
-    max-width: 1700px;
-    margin:40px auto;
-    display: none;
-    position: relative;
-  }
-
-
-  /*
-=================================================================================================================================
-     *Gommages
-=================================================================================================================================
-*/
-.gommages {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: repeat(auto-fill, 300px);
-    justify-content: center;
-    align-items: center;
-    grid-gap: 15px;
-    width: 80vw;
-    max-width: 1700px;
-    margin:40px auto;
-    display: none;
-    position: relative;
-  }
-
-  /*
-=================================================================================================================================
-     *Épilations
-=================================================================================================================================
-*/
-.epilation {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: repeat(auto-fill, 300px);
-    justify-content: center;
-    align-items: center;
-    grid-gap: 15px;
-    width: 80vw;
-    max-width: 1700px;
-    margin:40px auto;
-    display: none;
-    position: relative;
-  }
-  /*
-=================================================================================================================================
-     *Masque
-=================================================================================================================================
-*/
-.masques {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: repeat(auto-fill, 250px);
-    justify-content: center;
-    align-items: center;
-    grid-gap: 15px;
-    width: 80vw;
-    max-width: 1700px;
-    margin:40px auto;
-    display: none;
-    position: relative;
-  }
-
-.masques .image {
-    display: block;
-    height: 50%;
-    gap:3px;
-    width: 250px;
-    border-radius: 15px;    
-    background-color:#c38155;
-    height: 270px;   
-  }
-
 
    /*
 =================================================================================================================================
      *Visage
 =================================================================================================================================
 */
-.visages {
+.visages , .masques , .epilation , .gommages ,.soins  {
     display: grid;
     justify-content: center;
     align-items: center;
