@@ -421,6 +421,7 @@ ul.bardenavigations{
     box-shadow: 8px 7px 11px -5px rgba(0,0,0,0.94);
   -webkit-box-shadow: 8px 7px 11px -5px rgba(0,0,0,0.94);
   -moz-box-shadow: 8px 7px 11px -5px rgba(0,0,0,0.94);
+  margin-bottom: 70px;
   }
 
   
@@ -1069,13 +1070,46 @@ p#logoname{
     }
 
     .soins, .massage,.gommages ,.epilation ,.masques , .visages {
-        grid-template-columns: repeat(auto-fill, 350px);
+        grid-template-columns: repeat(auto-fill, 550px);
       }
       .soins .image ,.massage .image, .gommages .image ,.epilation .image ,
       .masques .image , .visages .image{
         width: 350px; 
       }
 
+
+    
+
+
+.card-prix{
+    background-color:#ffecdb;
+    height:330px;
+    width:550px;
+    display: flex ;
+    justify-items: center;
+    justify-content: center;
+    flex-wrap:nowrap;
+  margin-bottom: 0;
+  }
+  
+  .card-prix img{
+    background-color: #88603b;
+    height:90%;
+    width:50%;
+    margin:  auto;
+    position:relative;
+     left:-70px;
+     top: 0;
+  }
+  
+  .cardprix-txt{
+    gap:10px;
+    width:60%;
+    left:-50px;
+    top: 0;
+    margin:auto;
+  }
+  
     /*============  *Footer*  =========*/    
     footer {
         height: auto;
@@ -1105,7 +1139,43 @@ p#logoname{
         justify-content: left;
     }
 }
+@media only screen and (max-width: 780px) {
 
+    .soins, .massage,.gommages ,.epilation ,.masques , .visages {
+        grid-template-columns: repeat(1, 80vw);
+      }
+
+    .card-prix{
+        background-color:#ffecdb;
+        min-height:330px;
+        width:80vw;
+        display: flex ;
+        justify-items: center;
+        justify-content: center;
+        flex-wrap:nowrap;
+        margin-left: 40px;
+      }
+      
+      .card-prix img{
+        min-height:330px;
+        background-color: #88603b;
+        height:100%;
+        width:50%;
+        margin:  auto;
+        position:relative;
+         left:-70px;
+         top: 0;
+      }
+      
+      .cardprix-txt{
+        gap:10px;
+        width:60%;
+        left:-50px;
+        top: 0;
+        margin:auto;
+      }
+
+}
 
 @media only screen and (max-width: 600px) {
     .wrapper .carousel {
