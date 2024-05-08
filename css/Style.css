@@ -52,7 +52,7 @@ body {
 }
 
 img {
-    background: url(../Images/All/img.png);
+    background: url(../Images/img.png);
     background-position: center;
     background-size: cover;
 }
@@ -234,7 +234,7 @@ nav{
     left: 50%;
     transform: translate(-50%, -50%);
     backdrop-filter: blur(50px);
-    background-image:url(../images/All/bg01.jpg) ;
+    background-image:url(../images/bg01.jpg) ;
     background-repeat: no-repeat;
     background-size: cover;
     backdrop-filter: blur(5px);
@@ -465,7 +465,7 @@ nav{
 }
 
 #slid1{
-    background-image:  url(../images/All/1big.jpg);
+    background-image:  url(../images/1big.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -487,7 +487,7 @@ nav{
     opacity: 40%;
 }
 #slid2{
-    background:#f1dec9 url(../images/All/bg04.jpg) ;
+    background:#f1dec9 url(../images/bg04.jpg) ;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right 95% bottom 15%;
@@ -509,7 +509,7 @@ nav{
     opacity: 40%;
 }
 #slid3{
-    background:#f1dec9 url(../images/All/sauna1.jpg) center/cover no-repeat;
+    background:#f1dec9 url(../images/sauna1.jpg) center/cover no-repeat;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -527,7 +527,7 @@ nav{
     opacity: 40%;
 }
 #slid4{
-    background:#f1dec9 url(../images/All/bg01.jpg) center/cover no-repeat;
+    background:#f1dec9 url(../images/bg01.jpg) center/cover no-repeat;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -680,7 +680,7 @@ nav{
     flex-wrap: nowrap;
     margin: auto; 
     background-color: #ce8f2d;
-    background: url(../images/All/2medium.jpg);
+    background: url(../images/2medium.jpg);
     background-position: 50% 50%;    
     background-size: cover;
     background-repeat: no-repeat;
@@ -902,7 +902,7 @@ nav{
     margin: auto;
     position: relative;
     background-attachment: fixed;
-    background-image: url(../Images/All/2medium.jpg);
+    background-image: url(../Images/2medium.jpg);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
