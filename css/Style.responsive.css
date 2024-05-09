@@ -430,12 +430,14 @@
         width: 100vw;
         height: auto;
         border-radius: 0;
+        background-color: none;
     }
     .propos-msg {
         height: auto;
         max-height: auto;
         border-radius: 0;
         width: 100%;
+        background-color: none;
     }
     .msg-txt {
         width: 100%;
@@ -445,6 +447,8 @@
         text-align: justify;
         background-color: rgba(0, 0, 0, 0.308);
         margin: auto 2px;
+        background-color: none;
+
     }
     .msg-txt p:nth-child(2) {
        display: none;
@@ -503,13 +507,15 @@
         justify-content: left;
     }
     .ma-galerie {
-        grid-template-columns: repeat(2, 22rem);
+        grid-template-columns: repeat(1,890vw);
     }
 
     .ma-galerie img{
         width: 100%;
-        height: 150px;
+        height: 250px;
         background: #333;
+        object-fit: cover;
+        object-position: center;
     }
     /*============  *News Letter*  =========*/
     .newsletter{
@@ -521,7 +527,7 @@
         max-width: 100%;
     }
     .elementsnews{
-        width: 100%;
+        width: 90%;
         justify-content:flex-start;
         align-items: flex-start;
         flex-wrap: wrap;
@@ -554,7 +560,7 @@
     /*============  *Rdv*  =========*/
     .rdv{
         height: auto;
-        width:90vw;
+        width:80vw;
         max-width: 100%;
         flex-wrap: wrap;
         margin:10px auto;
