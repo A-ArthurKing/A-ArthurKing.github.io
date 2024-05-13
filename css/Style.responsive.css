@@ -47,7 +47,43 @@
     .btnreserver {
         padding: 10px 120px;
     }
+  /*=======* ZONE DETENTE ========*/
+  .ZoneDetente{
+    flex-wrap: wrap;
+    width: 100vw;
+    max-width: 100%;
+    gap: 0;
+ }
+ .firstpart ,.secondpart{
+     flex-wrap: wrap;
+     margin: auto;
+     width: 95vw;
+     height: auto;
+ }
+ .firstpartimg , .secondpartimg {
+     width:95%;
+     height:350px;
+ }
 
+ .firstparttxt, .secondparttxt {
+     height: auto;
+     width:95vw;
+     margin: auto;
+     border: none;
+     padding: 0;
+ }
+
+ .secondparttxt{
+    order: 1;
+ }
+ .secondpartimg{
+    order: 1;
+    display: none;
+ }
+ .firstparttxt p{
+     display: block;
+     padding-bottom: 20px;
+ }
     /*============  *A PROPOS*  =========*/
     .wrapper .carousel {
         grid-auto-columns: calc((100% / 4) - 10px);
@@ -430,14 +466,14 @@
         width: 100vw;
         height: auto;
         border-radius: 0;
-        background-color: none;
+        background: #C38154;
     }
     .propos-msg {
         height: auto;
         max-height: auto;
         border-radius: 0;
         width: 100%;
-        background-color: none;
+        background: none;
     }
     .msg-txt {
         width: 100%;
@@ -445,10 +481,10 @@
         border-radius: 0;
         display: block;
         text-align: justify;
-        background-color: rgba(0, 0, 0, 0.308);
         margin: auto 2px;
-        background-color: none;
-
+        background: none;
+        color: black;
+        backdrop-filter: none;
     }
     .msg-txt p:nth-child(2) {
        display: none;
@@ -456,10 +492,12 @@
     .msg-txt h1{
         width: 100%;
         padding: 0 0 0 20px;
+        color: #f1dec9;
     }
     .msg-txt p{
         display: block;
         width: 100%;
+        color: black;
     }
     /*============  *NOS PRESTATIONS*  =========*/
     .nosprestations{
@@ -658,12 +696,12 @@
 
 /*=======* Galérie ========*/
     .ma-galerie {
-        grid-template-columns: repeat(2, 11rem);
+        grid-template-columns: repeat(1, 100%);
     }
 
     .ma-galerie img{
         width: 100%;
-        height: 150px;
+        height: 200px;
         background: #333;
     }
 }      
