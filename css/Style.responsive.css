@@ -391,7 +391,7 @@
         width: 90VW;
         max-width: 100%;
         display: grid;   
-        grid-template-columns: repeat(4, 5rem);
+        grid-template-columns: repeat(4, 9rem);
         justify-content: center;
         align-items:center;
         grid-gap: 18px;
@@ -466,7 +466,7 @@
         width: 100vw;
         height: auto;
         border-radius: 0;
-        background: #C38154;
+        background: none;
     }
     .propos-msg {
         height: auto;
@@ -476,7 +476,7 @@
         background: none;
     }
     .msg-txt {
-        width: 100%;
+        width: 90%;
         padding: 0;
         border-radius: 0;
         display: block;
@@ -491,8 +491,8 @@
     }
     .msg-txt h1{
         width: 100%;
-        padding: 0 0 0 20px;
-        color: #f1dec9;
+        padding: 0 ;
+        color: #C38154;
     }
     .msg-txt p{
         display: block;
@@ -502,10 +502,11 @@
     /*============  *NOS PRESTATIONS*  =========*/
     .nosprestations{
         height: auto;
-        width: 95vw;
+        width: 90vw;
     }
     .wrapper .carousel {
         grid-auto-columns: calc((100% / 2) - 12px);
+        overflow: hidden;
     }
     .title-prestations p{
         width: 90%;
@@ -545,7 +546,7 @@
         justify-content: left;
     }
     .ma-galerie {
-        grid-template-columns: repeat(1,890vw);
+        grid-template-columns: repeat(1,100%);
     }
 
     .ma-galerie img{
@@ -594,11 +595,13 @@
     }
     .formnewletter input{
         width: 100%;
+        border-radius:5px;
+        border: 1px solid white;
     }
     /*============  *Rdv*  =========*/
     .rdv{
         height: auto;
-        width:80vw;
+        width:85vw;
         max-width: 100%;
         flex-wrap: wrap;
         margin:10px auto;
@@ -629,8 +632,9 @@
     .time{
         width: 100%;
     }
-    .elementform input{
+    .elementforms input{
         width: 100%;
+        border-radius:5px;
     }
     
     /*============  *Footer*  =========*/    
@@ -667,14 +671,24 @@
 
 
 @media only screen and (max-width: 750px) {
-
+    /*=======* PRÉAMBULE ========*/        
+    .préambule{
+        grid-template-columns: repeat(4, 5rem);
+    }
     /*============  *NOS PRESTATIONS*  =========*/
     .nosprestations{
         height: auto;
-        width: 95vw;
+        width: 90vw;
+        overflow: hidden;
     }
     .wrapper .carousel {
-        grid-auto-columns: calc((100% / 1) - 9px);
+        grid-auto-columns: calc((100% / auto) -40px);
+        width: 100%;
+        overflow: hidden;
+    }
+    .nosprestations h1{
+        font-size: 25px;
+
     }
     .title-prestations p{
         width: 90%;
@@ -690,9 +704,15 @@
     }
     .carousel .card .img {
         background: #f1dec9;
-        height: 60%;
+        height: 50%;
+    }
+    .wrapper i:first-child{
+        left: -10px;
+        z-index: 1;
       }
-
+      .wrapper i:last-child{
+        right: -10px;
+      }
 
 /*=======* Galérie ========*/
     .ma-galerie {
@@ -708,6 +728,14 @@
 
 @media only screen and (max-width: 500px) {
     h1 {font-size: 20px;}
+
+    .wrapper .carousel {
+        grid-auto-columns: calc((100% / 1) -40px);
+    }
+    .carousel .card {
+        height: 300px;
+        width: 100%;
+    }
 }
 
 
