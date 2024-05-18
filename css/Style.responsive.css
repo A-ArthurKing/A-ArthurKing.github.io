@@ -439,6 +439,7 @@
     .ZoneDetente{
        flex-wrap: wrap;
        width: 100vw;
+       height: auto;
        max-width: 100%;
        gap: 0;
     }
@@ -470,6 +471,9 @@
         display: block;
         padding-bottom: 0;
     }
+    .firstparttxt p:nth-child(2){
+        display: none;
+    }
     /*=======* A PROPOS========*/
     .a-propos {
         width: 100vw;
@@ -489,11 +493,12 @@
         padding: 0;
         border-radius: 0;
         display: block;
-        text-align: justify;
+        text-align: left;
         margin: auto 2px;
         background: none;
         color: black;
         backdrop-filter: none;
+        height: auto;
     }
     .msg-txt p:nth-child(2) {
        display: none;
@@ -507,11 +512,13 @@
         display: block;
         width: 100%;
         color: black;
+        text-align: left;
     }
     /*============  *NOS PRESTATIONS*  =========*/
     .nosprestations{
         height: auto;
         width: 90vw;
+        text-align: left;
     }
     .wrapper .carousel {
         grid-auto-columns: calc((100% / 2) - 12px);
@@ -523,7 +530,7 @@
         color: white;
         padding: 0;
         display: block;
-        text-align: justify;
+        text-align: left;
     }
     .carousel .card {
             height: 300px;
@@ -593,6 +600,7 @@
         width: 100%;
         margin: 0;
         padding: 0;
+        text-align: left;
     }
     .formnewletter{
         width: 100%;
@@ -687,13 +695,14 @@
     /*============  *NOS PRESTATIONS*  =========*/
     .nosprestations{
         height: auto;
-        width: 90vw;
+        width: 95vw;
         overflow: hidden;
     }
     .wrapper .carousel {
         grid-auto-columns: calc((100% / auto) -40px);
         width: 100%;
         overflow: hidden;
+        gap: 20px;
     }
     .nosprestations h1{
         font-size: 25px;

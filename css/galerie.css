@@ -47,7 +47,7 @@ img {
     align-items: center;
     width: 100vw;
     max-width: 100%;
-    height: 50px;
+    height: 60px;
     justify-content: space-around;
     margin: auto;
     background-color: inherit;
@@ -149,37 +149,39 @@ nav{
   
 
 @media only screen and (max-width: 990px) {
-    /*============  *NAV*  =========*/
-    .navbar :is(.hamburger-btn, .close-btn) {
+     /*============  *NAV*  =========*/
+     .navbar .close-btn{
         display: block;
         font-size: 40px;
-        color: #C38154;
+        color: white;
+        right: 10px;
+        top: 10px;
+        position: absolute;
+        text-align: right;
+    }
+    .navbar .hamburger-btn {
+        display: block;
+        font-size: 40px;
+        color: white;
     }
     .navbar {
-        padding: 15px 10px;
         margin: 0;
-        justify-content: space-evenly;
-        padding: auto ;
-        gap: 60%;
+        justify-content: space-between;
         height: 55px;
+        padding: 5px 18px;
     }
-    .navbar .logo img {
-        display: none;
-    }
-    #logo {
-        width: 50%;
-        margin-left: -70px;
+    #logo  {
     }
     #logo a {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         display: flex;
         flex-wrap: nowrap;
         gap: 10px;
+        color: white;
     }
-    
     #logo span {
         font-family: "Catalish Huntera";
-        color: #ce8f2d;
+        color: white;
     }
     .navbar .links {
         position: fixed;
@@ -188,10 +190,11 @@ nav{
         left: -100%;
         display: block;
         height: 100vh;
+        min-height: 100vh;
         width: 100%;
         padding-top: 60px;
         text-align: center;
-        background: #ce8f2d;   
+        background: #C38154;    
         transition: 0.2s ease;
     }
     .navbar .links.show-menu {
@@ -205,7 +208,6 @@ nav{
         border: 2px solid transparent; 
         border-bottom: 2px solid white; 
         width: 90%;
-        padding: 2px 20px;
         border-radius: 0;
     }
     .navbar .links a:hover {
@@ -215,6 +217,13 @@ nav{
         font-size: 0.9rem;
         padding: 7px 10px;
         display: none; 
+    }
+    .navbar.scrolled {
+        background-color: #C38154;  
+        color: white;
+    }
+    .links a.scrolled,#logo a.scrolled {
+        color:white; 
     }
   }
 
