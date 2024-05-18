@@ -466,10 +466,12 @@
     }
     .firstparttxt h1{
         padding-left: 20px;
+
     }
     .firstparttxt p{
         display: block;
         padding-bottom: 0;
+        text-align: left;
     }
     .firstparttxt p:nth-child(2){
         display: none;
@@ -698,11 +700,12 @@
         width: 95vw;
         overflow: hidden;
     }
+
     .wrapper .carousel {
-        grid-auto-columns: calc((100% / auto) -40px);
+        grid-auto-columns: calc((100% / 1) - 12px);
         width: 100%;
-        overflow: hidden;
         gap: 20px;
+        overflow: hidden;
     }
     .nosprestations h1{
         font-size: 25px;
@@ -714,7 +717,7 @@
         color: white;
         padding: 0;
         display: block;
-        text-align: justify;
+        text-align: left;
     }
     .carousel .card {
             height: 300px;
