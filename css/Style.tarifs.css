@@ -796,11 +796,19 @@ p#logoname{
         height: 300px;
     }
     /*============  *NAV*  =========*/
-      .navbar :is(.hamburger-btn, .close-btn) {
+    .navbar .close-btn{
         display: block;
         font-size: 40px;
         color: white;
-        padding: 0;
+        right: 10px;
+        top: 10px;
+        position: absolute;
+        text-align: right;
+    }
+    .navbar .hamburger-btn {
+        display: block;
+        font-size: 40px;
+        color: white;
     }
     .navbar {
         margin: 0;
@@ -829,7 +837,7 @@ p#logoname{
     .navbar .links {
         position: fixed;
         top: 0;
-        z-index: 99999;
+        z-index: 999999999999999;
         left: -100%;
         display: block;
         height: 100vh;
@@ -838,7 +846,7 @@ p#logoname{
         padding-top: 60px;
         text-align: center;
         background: #C38154;    
-        transition: 0.2s ease;
+        transition: 0.3s ease-in-out;
     }
     .navbar .links.show-menu {
         left: 0;
@@ -877,10 +885,11 @@ p#logoname{
     .bardenavigations li{
         font-size: 15px;
         margin: 10px;
-        width: 50px;
+        width: 70px;
     }
     ul.bardenavigations{
-        top: 65px;
+        top: 55px;
+        z-index: 1;
     }
 
     .soins, .massage,.gommages ,.epilation ,.masques , .visages {
@@ -888,7 +897,7 @@ p#logoname{
       }
       .soins .image ,.massage .image, .gommages .image ,.epilation .image ,
       .masques .image , .visages .image{
-        width: 350px; 
+        width: 550px; 
       }
 
 

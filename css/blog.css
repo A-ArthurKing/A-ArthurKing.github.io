@@ -66,7 +66,7 @@ img {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-style: normal;
-    background-color: #f9f1e8;
+    background: #F1DEC9;    
 }
 
 
@@ -148,6 +148,7 @@ nav{
 .card-list .card-item {
     background-color:#ffecdb;
     padding: 26px;
+    max-height: 100px;
     border-radius: 8px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
     list-style: none;
@@ -168,7 +169,10 @@ nav{
     aspect-ratio: 16/9;
     border-radius: 8px;
     object-fit: cover;
+    height: 150px;
+
 }
+
 .card-list span {
     display: inline-block;
     background: #F7DFF5;
@@ -460,9 +464,19 @@ p#logoname{
 }
 @media screen and (max-width: 980px) {
       /*============  *NAV*  =========*/
-    .navbar :is(.hamburger-btn, .close-btn) {
+    .navbar .close-btn{
         display: block;
         font-size: 40px;
+        color: #C38154;
+        right: 10px;
+        top: 10px;
+        position: absolute;
+        text-align: right;
+    }
+    .navbar .hamburger-btn {
+        display: block;
+        font-size: 40px;
+        color: #C38154;
     }
     .navbar {
         margin: 0;
@@ -488,8 +502,9 @@ p#logoname{
         width: 100%;
         padding-top: 60px;
         text-align: center;
-        background: #C38154;    
-        transition: 0.2s ease;
+        background: #F1DEC9;    
+        transition: 0.3s ease-in-out;
+
     }
     .navbar .links.show-menu {
         left: 0;
@@ -501,7 +516,9 @@ p#logoname{
         border: 2px solid transparent; 
         width: 90%;
         border-radius: 0;
-    }
+        color: #C38154;
+        border: 2px solid transparent; 
+        border-bottom: 2px solid #C38154;     }
     .navbar .links a:hover {
         color: white;
     }

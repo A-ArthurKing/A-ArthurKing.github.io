@@ -265,7 +265,16 @@
 
 @media only screen and (max-width: 990px) {
     /*============  *NAV*  =========*/
-    .navbar :is(.hamburger-btn, .close-btn) {
+    .navbar .close-btn{
+        display: block;
+        font-size: 40px;
+        color: white;
+        right: 10px;
+        top: 10px;
+        position: absolute;
+        text-align: right;
+    }
+    .navbar .hamburger-btn {
         display: block;
         font-size: 40px;
         color: white;
