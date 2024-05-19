@@ -473,7 +473,7 @@ ul.bardenavigations{
   }
   
   .cardprix-txt h2{
-     font-size:23px;
+     font-size:20px;
     font-weight:bold;
     color:#C38154;
     margin-bottom: 5px;
@@ -482,7 +482,7 @@ ul.bardenavigations{
    color:#C38154;
  }
   .cardprix-txt p{
-     font-size:17px;
+     font-size:15px;
      color:black;
   }
   
@@ -906,28 +906,29 @@ p#logoname{
 
 .card-prix{
     background-color:#ffecdb;
-    height:230px;
+    height:200px;
     width:550px;
     display: flex ;
     justify-items: center;
     justify-content: center;
     flex-wrap:nowrap;
-  margin-bottom: 0;
+    margin-bottom: 0;
   }
   
   .card-prix img{
     background-color: #88603b;
     height:80%;
-    width:40%;
+    width:30%;
     margin:  auto;
     position:relative;
-     left:0px;
+     right:12px;
      top: 0;
+     border-radius: 15px;
   }
   
   .cardprix-txt{
     gap:10px;
-    width:50%;
+    width:60%;
     height: 80%;
     left:0px;
     top: 0;
@@ -964,14 +965,21 @@ p#logoname{
     }
 }
 @media only screen and (max-width: 780px) {
-
-    .soins, .massage,.gommages ,.epilation ,.masques , .visages {
-        grid-template-columns: repeat(1, 80vw);
+      i.left{
+        left: -15px;
+    }
+      .wrapper i:last-child{
+        right: -15px;
       }
 
+
+
+    .soins, .massage,.gommages ,.epilation ,.masques , .visages {
+        grid-template-columns: repeat(1, 90vw);
+      }
     .card-prix{
         background-color:#ffecdb;
-        width:80vw;
+        width:90vw;
         height:250px;
         display: flex ;
         justify-items: center;
@@ -979,18 +987,27 @@ p#logoname{
         flex-wrap:nowrap;
         margin-left:0;
       }
+      .card-prix img{
+        background-color: #88603b;
+        height:80%;
+        width:40%;
+      }
+      
+      .cardprix-txt{
+        height: 80%;
+      }
       .cardprix-txt h2{
-        font-size:18px;
+        font-size:16px;
      }
      .cardprix-txt p{
-        font-size:15px;
+        font-size:12px;
      }
      .cardprix-txt h3{
         bottom: 0;
         font-size:15px;
-        width:50%;
+        width:70%;
         padding:8px 2px;
-      margin-top:15px;
+        margin-top:5px;
       }
 }
 
