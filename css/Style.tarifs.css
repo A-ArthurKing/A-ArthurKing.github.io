@@ -980,7 +980,7 @@ p#logoname{
     .card-prix{
         background-color:#ffecdb;
         width:90vw;
-        height:250px;
+        height:200px;
         display: flex ;
         justify-items: center;
         justify-content: center;
@@ -1001,12 +1001,13 @@ p#logoname{
      }
      .cardprix-txt p{
         font-size:12px;
+        padding-right: 15px;
      }
      .cardprix-txt h3{
         bottom: 0;
         font-size:15px;
-        width:70%;
-        padding:8px 2px;
+        width:65%;
+        padding:5px 2px;
         margin-top:5px;
       }
 }
