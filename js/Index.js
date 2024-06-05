@@ -186,3 +186,25 @@ function handleScrollPrev(direction) {
 
 next.addEventListener("click", handleScrollNext);
 prev.addEventListener("click", handleScrollPrev);
+/*
+=================================================================================================================================
+      *BUTTON TOP
+=================================================================================================================================
+*/
+window.onscroll = function() {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  const btnTop = document.getElementById("btnTop");
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      btnTop.style.display = "block";
+  } else {
+      btnTop.style.display = "none";
+  }
+}
+
+// Lorsque l'utilisateur clique sur le bouton, retourner en haut de la page
+document.getElementById("btnTop").addEventListener("click", function() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});

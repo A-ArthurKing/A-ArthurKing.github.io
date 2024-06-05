@@ -54,18 +54,18 @@
     max-width: 100%;
     gap: 0;
  }
- .firstpart ,.secondpart{
+ .firstpart {
      flex-wrap: wrap;
      margin: auto;
      width: 95vw;
      height: auto;
  }
- .firstpartimg , .secondpartimg {
+ .firstpartimg {
      width:95%;
      height:350px;
  }
 
- .firstparttxt, .secondparttxt {
+ .parttxt{
      height: auto;
      width:95vw;
      margin: auto;
@@ -170,18 +170,18 @@
         max-width: 100%;
         gap: 0;
      }
-     .firstpart ,.secondpart{
+     .firstpart {
          flex-wrap: wrap;
          margin: auto;
          width: 85%;
          height: auto;
      }
-     .firstpartimg , .secondpartimg {
+     .firstpartimg  {
          width:85%;
          height:350px;
      }
 
-     .firstparttxt, .secondparttxt {
+     .parttxt {
          height: auto;
          width:85%;
          margin: auto;
@@ -189,14 +189,7 @@
          padding: 0;
      }
 
-     .secondparttxt{
-        order: 1;
-     }
-     .secondpartimg{
-        order: 1;
-        display: none;
-     }
-     .firstparttxt p{
+     .parttxt p{
          display: block;
          padding-bottom: 20px;
      }
@@ -434,6 +427,7 @@
        height: auto;
        max-width: 100%;
        gap: 0;
+       margin: 20px auto;
     }
     .firstpart{
         flex-wrap: wrap;
@@ -448,7 +442,7 @@
     .secondpart  {
        display: none;
     }
-    .firstparttxt {
+    .parttxt {
         height: auto;
         width:100%;
         margin: auto;
@@ -456,43 +450,30 @@
         padding: 0;
         gap: 0;
     }
-    .firstparttxt h1{
-        padding-left: 20px;
 
-    }
-    .firstparttxt p{
+    .parttxt p{
         display: block;
         padding-bottom: 0;
         text-align: left;
     }
-    .firstparttxt p:nth-child(2){
+    .parttxt p:nth-child(2){
         display: none;
     }
     /*=======* A PROPOS========*/
     .a-propos {
         width: 100vw;
+        min-height: 200px;
         height: auto;
         border-radius: 0;
-        background: none;
     }
     .propos-msg {
         height: auto;
         max-height: auto;
         border-radius: 0;
         width: 100%;
-        background: none;
     }
     .msg-txt {
-        width: 90%;
-        padding: 0;
-        border-radius: 0;
-        display: block;
-        text-align: left;
-        margin: auto 2px;
-        background: none;
-        color: black;
-        backdrop-filter: none;
-        height: auto;
+        color: white;
     }
     .msg-txt p:nth-child(2) {
        display: none;
@@ -505,7 +486,6 @@
     .msg-txt p{
         display: block;
         width: 100%;
-        color: black;
         text-align: left;
     }
     /*============  *NOS PRESTATIONS*  =========*/
