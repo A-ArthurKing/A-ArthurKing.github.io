@@ -1367,8 +1367,25 @@ transform: scale(1.1);
     border: 1px solid white;
 }
 
+/*
+=================================================================================================================================
+     *MAP
+=================================================================================================================================
+*/
+.map{
+    height: 400px;
+    width: 90vw;
+    max-width: 1700px;
+    background-color: #d19875;
+    margin: 40px auto;
+    position: relative;
+}
 
-
+.map iframe{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
 /*
 =================================================================================================================================
      *FOOTER
@@ -1387,33 +1404,27 @@ footer {
     padding-bottom: 20px;
     margin: auto;
     padding: 20px;
-    overflow: hidden;
 }
 footer a , footer p  {
     color: white;
 }
+
 .part1 {
-    max-width: 1700px;
+    max-width: 1500px;
+    width: 80%;
+    height: auto;
+    margin: 30px auto;
     display: grid;
-    grid-template-columns: repeat(4, 400px);
+    grid-template-columns: repeat(auto-fill, 300px);
     justify-content: center;
-    justify-items: center;
-    grid-gap: 5px;
-    margin: auto;
+    align-items: center;
+    grid-gap: 30px;
 }
-
-
-.Lehahiahangel{
-    width: 100%;
-    height:70%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 0;
-    font-weight: 300;
-    font-style: normal;
+.Lehahiahangel,.Nouscontacter,.Nospages,.Horraires {
+    width: 300px;
+    height: 250px;
+    padding:0 10px;
+    color: white;
 }
 .iconelogo {
     height:90px;
@@ -1423,93 +1434,31 @@ footer a , footer p  {
 }
 .Lehahiahangel p {
     font-size: 18px;
+    margin: 0;
 }
-p#logoname{
+#logoname{
     width: 100%;
     margin: auto;
     font-size:25px;
     font-family: "Catalish Huntera";
     font-weight: lighter;
-    margin-bottom: 15px;
-}
-
-.Nospages{
-    width: 50%;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    gap: 0;
-    font-weight: 300;
-    font-style: normal;
-}
-
-.Nospages h1 {
-    font-size:25px;
-    color: white;
-    margin-bottom: 30px;
-}
-.Nospages a {
-    font-size: 18px;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    padding-bottom: 1px transparent;
-    width: 100%;
-}
-.Nospages a:hover {
-    width: 100%;
-}
-
-.Nouscontacter{
-    width: 70%;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    gap: 0;
-    font-weight: 300;
-    font-style: normal;
+    margin-bottom: 10px;
 }
 .Nouscontacter h1 {
     font-size:25px;
     color: white;
     margin-bottom: 15px;
 }
-.Nouscontacter h1 a{
+.Nouscontacter a{
     color: white;
     flex-wrap: nowrap;
-}
-.Nouscontacter div {
-    display: flex ;
-    justify-items: center;
-    justify-content: center;
-    height: 30px;
-    gap: 5px;
-    font-size: 18px;
-}
-.Nouscontacter a.fac{
-    cursor: pointer;
-    transition: all 0.1s ease-in-out;
-    font-weight: lighter;
+    text-decoration: none;
+    padding-bottom: 3px;
 }
 .Nouscontacter i{
-    font-size: 20px;
-    transition: all 0.1s ease-in-out;
-    padding:0 10px 0 0;
-    margin: auto;
-    text-align: left;
+    padding-right: 10px;
 }
-.Nouscontacter i:hover{
-    color: white;
-}
-
-
-
-.Horraires{
-    width: 80%;
-    padding: 20px;
+.Nospages{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -1518,14 +1467,29 @@ p#logoname{
     font-weight: 300;
     font-style: normal;
 }
+.Nospages h1 {
+    font-size:25px;
+    margin-bottom: 30px;
+}
+.Nospages a {
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 4px;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+}
+.Nospages a:hover {
+    width: 100%;
+}
 .Horraires h1 {
     font-size: 25px;
-    color: white;
+    margin-bottom: 20px;
 }
-
 .Horraires p {
     font-size: 18px;
-    color: white;
+    margin-bottom: 4px;
     padding: 0;
     font-weight: 300;
     font-style: normal;

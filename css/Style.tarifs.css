@@ -406,8 +406,8 @@ ul.bardenavigations{
 }
 
 .listsoins{
-    width: 90%;
-    max-width: 90%;
+    width: 98%;
+    max-width: 98%;
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -425,7 +425,7 @@ ul.bardenavigations{
 
 .card-prix{
     background-color:#ffecdb;
-    height:365px;
+    height:320px;
     width:300px;
     display: flex ;
     justify-items: center;
@@ -433,7 +433,7 @@ ul.bardenavigations{
     flex-wrap:wrap;
     position:relative;
     border-radius:14px;
-    margin:au;
+    margin:auto;
     border:1px solid #C38154;
     font-family: 'Gotham';
     box-shadow: 8px 7px 11px -5px rgba(0,0,0,0.94);
@@ -449,11 +449,11 @@ ul.bardenavigations{
 }
 
   .card-prix img{
-    height:160px;
+    height:120px;
     width:90%;
     margin:  auto;
     position:absolute;
-    top:-50px;
+    top:-20px;
     border-radius:14px;
     object-fit: cover;
     object-position: center;
@@ -467,13 +467,13 @@ ul.bardenavigations{
     position:relative;
     top:120px;
     gap:5px;
-    height:62%;
+    height:55%;
     width:90%;
     cursor:default;
   }
   
   .cardprix-txt h2{
-     font-size:20px;
+     font-size:18px;
     font-weight:bold;
     color:#C38154;
     margin-bottom: 5px;
@@ -481,11 +481,40 @@ ul.bardenavigations{
   .cardprix-txt h4{
    color:#C38154;
  }
-  .cardprix-txt p{
-     font-size:15px;
-     color:black;
-  }
+ .cardprix-txt p {
+    font-size: 13px;
+    color: black;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 4.5em; 
+    transition: max-height 0.3s ease;
+}
   
+.cardprix-txt p.expanded {
+    -webkit-line-clamp: none;
+    max-height: none;
+}
+
+.toggle-button {
+    display: block;
+    margin-top: 10px;
+    background-color: transparent;
+    color: #C38154;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 2px;
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.toggle-button:hover {
+    border-bottom: 1px solid #C38154;
+}
+
   .cardprix-txt i{
     font-size:17px;
     padding-right: 10px;
@@ -494,7 +523,7 @@ ul.bardenavigations{
   .cardprix-txt h3{
     position: absolute;
     bottom: 0;
-    font-size:18px;
+    font-size:15px;
     font-weight:bold;
     border-radius:5px;
     background-color: #C38154;

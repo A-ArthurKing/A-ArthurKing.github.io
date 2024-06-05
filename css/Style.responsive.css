@@ -152,15 +152,7 @@
         flex-wrap: wrap;
         margin: auto;
     }
-    /*============  *Footer*  =========*/
-    footer {
-        height: auto;
-    }
-    .part1 {
-        height: auto;
-        grid-template-columns: repeat(4, 250px);
-        margin-bottom: 70px;
-    }
+
       /*=======* A PROPOS ========*/
       .a-propos {
         max-width: 100%;
@@ -666,13 +658,17 @@
     }
     .part1 {
         height: auto;
-        grid-template-columns: repeat(1, 100%);
+    grid-template-columns: repeat(auto-fill, 300px);
+        margin: 0;
+        padding: 0;
+        align-items: flex-start;
+        justify-content: flex-start;
+
     }
     .part2 {
         height: auto;
     }
     .Lehahiahangel{
-        padding: 20px;
     }
     .Lehahiahangel,.Nospages,.Nouscontacter,.Horraires  {
         max-width: 90vw;

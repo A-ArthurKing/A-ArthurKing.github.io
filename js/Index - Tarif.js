@@ -250,3 +250,24 @@ hideMenuBtn.addEventListener("click", () => hamburgerBtn.click());
 
 
 
+/*!
+=================================================================================================================================
+     *Affichage du texte en plus dans les paragraphes
+=================================================================================================================================
+*/
+document.addEventListener('DOMContentLoaded', function() {
+  const toggleButton = document.getElementById('toggle-button');
+  const textElement = document.getElementById('text');
+
+  toggleButton.addEventListener('click', function() {
+      console.log('Button clicked');
+      textElement.classList.toggle('expanded');
+      console.log('Text element classes:', textElement.classList);
+      if (textElement.classList.contains('expanded')) {
+          toggleButton.textContent = 'Afficher moins';
+      } else {
+          toggleButton.textContent = 'Afficher plus';
+      }
+  });
+});
+
