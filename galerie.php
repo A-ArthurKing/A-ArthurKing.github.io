@@ -27,19 +27,7 @@
 
 
 <body>
-    <nav class="navbar" id="navbar" >
-        <div id="logo"><a href="./index.html">Léhahiah <span>Angel's</span></a></div>        
-        <span class="hamburger-btn material-symbols-rounded">menu</span>
-
-        <ul class="links">
-            <span class="close-btn material-symbols-rounded">close</span>
-            <li><a href="./index.html">Acceuil</a></li>
-            <li><a href="#propos">A propos</a></li>
-            <li><a href="#nosprestations">Nos prestations</a></li>
-            <li><a href="./tarifs.html">Tarifs</a></li>
-            <li><a href="./blog.html">Blog</a></li>
-        </ul>
-    </nav>
+    <?php require 'navbar.php' ;?>
 
     <section id="galérie">
         <h1>Galérie</h1>
@@ -70,6 +58,9 @@
             <li><img src="./Images/z4.jpg" alt=""></li>
           </ul>
     </section>
+
+    <?php require 'footer.php'; ?>
+
     <script src="./js/index-galérie.js"> </script>
 </body>
 </html>

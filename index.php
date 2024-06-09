@@ -29,20 +29,7 @@
 
 <body>
     <div class="CSSgal">
-        <nav class="navbar" id="navbar" >
-            <div id="logo"><a href="./index.html">Léhahiah <span>Angel's</span></a></div>        
-            <span class="hamburger-btn material-symbols-rounded">menu</span>
-
-            <ul class="links">
-                <span class="close-btn material-symbols-rounded">close</span>
-                <li><a href="#propos">A propos</a></li>
-                <li><a href="#nosprestations">Nos prestations</a></li>
-                <li><a href="./tarifs.html">Tarifs</a></li>
-                <li><a href="./galerie.html">Galéries</a></li>
-                <li><a href="./blog.html">Blog</a></li>
-            </ul>
-            <button class="login-btn">Réserver</button>
-        </nav>
+        <?php require 'navbar.php' ;?>
 
         <s id="s1"></s> 
         <s id="s2"></s>
@@ -100,26 +87,8 @@
     </div>
 
     <div class="blur-bg-overlay"></div>
-    <div class="form-popup">
-        <form>
-            <div class="formulaire">
-                <span class="close-btn material-symbols-rounded">close</span>
-                <div class="elementform">
-                    <h2> Rendez-vous</h2>
-                    <input type="text" placeholder="Tapez votre nom ici" id="firstnameuser">
-                    <input type="text" placeholder="Tapez votre prénom ici" id="lastnameuser">
-                    <select name="SOIN" id="soinsuser">
-                        <option>MASSAGE</option>
-                        <option>ÉPILATION</option>
-                        <option>VISAGE</option>
-                    </select>
-                    <input type="date" placeholder="Date" id="daterdv">
-                    <input type="time" placeholder="Heure" id="timerdv">
-                    <input type="button" id="" class="btnreserver" value="RÉSERVER">
-                </div>
-            </div>
-        </form>
-    </div>
+    <?php require 'formulairerdv.php' ;?>
+
 
 
     <section class="préambule">
@@ -306,50 +275,8 @@
         </div>
     </section>
 
-    <section class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27643645.45381059!2d-26.28331646686698!3d32.24547633342523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x107f2597e0926195%3A0xae58e3dd97126d4d!2sL%C3%A9hahiah%20Angel&#39;s!5e0!3m2!1sfr!2sma!4v1717512303554!5m2!1sfr!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
+    <?php require 'footer.php'; ?>
 
-    <footer>
-        <div class="part1">
-            <div class="Lehahiahangel">
-                              <a href="./index.html" class="iconelogo" ><img src="./images/Icones/Logo simple sans coleurs.svg" height="90px" width="90px"></a>
-                        <p id="logoname">Léhahiah Angle's</p>
-                        <p>
-                            Notre équipe propose des prestations spécialisées et des soins adaptés, dans un institut toujours à la pointe des nouveautés.
-                        </p>
-            </div>
-            <div class="Nouscontacter">
-                <h1>Nous contacter</h1>
-                <div><a href=""><i class=" fac fa-solid fa-location-dot"></i>Charbonnages Gabon</a></div>
-                <div><a href=""><i class=" fac fa-solid fa-phone"></i>Phone: +241 066 68 58 85</a></div>
-                <div><a href=""><i class=" fac fa-brands fa-whatsapp"></i>Phone:+241 066 68 58 85</a></div>
-                <div><a href=""><i class=" fac fa-brands fa-whatsapp"></i>Email: lehahiahangels.com</a></div>
-            </div>
-            <div class="Horraires">
-                <h1>Nos Horaires</h1>
-                <p>Lundi au Samedi 8h00  - 18h30 </p>
-                <p>Dimanche        13h30 - 18h30 </p>
-                <p>Fermer le mercredi</p>
-            </div>
-            <div class="Nospages">
-                <h1>Nos pages</h1>
-                <a href="#propos">À propos</a>
-                <a href="#Nos tarifs">Nos Services</a>
-                <a href="#galérie">Galérie</a>
-                <a href="#Promotions">Promotions</a>
-                <a href="#rdv">Prendre RDV</a>
-            </div>
-        </div>
-        <div class="part2">
-            <div class="social">
-                <a href="https://www.instagram.com/leha.hiah/"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.facebook.com/lehahiah.lehahiah.7/"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://twitter.com/Lehahiahangels"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="https://www.tiktok.com/@lehahiahangels?lang=fr"><i class="fa-brands fa-tiktok"></i></a>
-            </div>
-            <p>© 2024 Léhahiah Angel s, Tous droits réservés Développer par  <span>@willix digital</span></p>
-        </div>
-    </footer>
+    
     <script src="./js/Index.js"> </script>
 </body>

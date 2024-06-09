@@ -26,20 +26,8 @@
 </head>
 
 <body>
-    <nav class="navbar" id="navbar" >
-        <span class="hamburger-btn material-symbols-rounded">menu</span>
-        <div id="logo"><a href="../index.html">Léhahiah <span>Angel's</span></a></div>        
+    <?php require 'navbar.php' ;?>
 
-        <ul class="links">
-            <span class="close-btn material-symbols-rounded">close</span>
-            <li><a href="../index.html">Acceuil</a></li>
-            <li><a href="../tarifs.html">Nos prestations</a></li>
-            <li><a href="../tarifs.html">Tarifs</a></li>
-            <li><a href="../galerie.html">Galéries</a></li>
-            <li><a href="../blog.html">Blog</a></li>
-        </ul>
-        <button class="login-btn">Réserver</button>
-    </nav>
     <section class="article">
         <h1>Le Gommage : Quel est son Rôle ?</h1>
         <p>Chers Anges,</p>
@@ -81,49 +69,8 @@
         <p>Trouver la fréquence idéale pour un bon gommage nécessite une certaine expérimentation et une connaissance approfondie de votre peau. En tenant compte de votre type de peau, de l'état de votre peau, du produit utilisé et de vos objectifs de soin, vous pouvez établir un programme de gommage adapté qui favorise une peau éclatante, lisse et en bonne santé.</p>
         <img>
     </section>
-    <footer>
-        <div class="part1">
-            <div class="Lehahiahangel">
-                <a href="./index.html" class="iconelogo" ><img src="./images/Icones/Logo simple sans coleurs.svg" height="90px" width="90px"></a>
-                <p id="logoname">Léhahiah Angle's</p>
-                <p>
-                    Notre équipe propose des prestations spécialisées et des soins adaptés, dans un institut toujours à la pointe des nouveautés.
-                </p>
-            </div>
+    <?php require 'footer.php'; ?>
 
-            <div class="Nospages">
-                <h1>Nos pages</h1>
-                <a href="../index.html">Acceuil</a>
-                <a href="../tarifs.html">Nos Tarrifs</a>
-                <a href="#galérie">Galérie</a>
-                <a href="#Promotions">Promotions</a>
-                <a href="../blog.html">Blog</a>
-            </div>
-
-            <div class="Nouscontacter">
-                <h1><a href="./contact.html">Nous contacter</a></h1>
-                <div><a href=""><i class=" fac fa-solid fa-location-dot"></i>Charbonnages Gabon</a></div>
-                <div><a href=""><i class=" fac fa-solid fa-phone"></i>+241 066 68 58 85</a></div>
-                <div><a href=""><i class=" fac fa-brands fa-whatsapp"></i>+241 066 68 58 85</a></div>
-            </div>
-
-            <div class="Horraires">
-                <h1>Nos Horaires</h1>
-                <p>Lundi au Samedi 8h00  - 18h30 </p>
-                <p>Dimanche        13h30 - 18h30 </p>
-                <p>Fermer le mercredi</p>
-            </div>
-        </div>
-        <div class="part2">
-            <div class="social">
-                <a href="https://www.instagram.com/leha.hiah/"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.facebook.com/lehahiah.lehahiah.7/"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://twitter.com/Lehahiahangels"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="https://www.tiktok.com/@lehahiahangels?lang=fr"><i class="fa-brands fa-tiktok"></i></a>
-            </div>
-            <p>© 2024 Léhahiah Angel s, Tous droits réservés Développer par  <span>@willix digital</span></p>
-        </div>
-    </footer>
     <script src="./js/index - Blog.js"> </script>
 </body>
 </html>

@@ -25,25 +25,12 @@
 <body>
 
     <header id="header">
-        <nav class="navbar" id="navbar">
-            <div id="logo"><a href="../index.html">Léhahiah <span>Angel's</span></a></div>        
-            <span class="hamburger-btn material-symbols-rounded">menu</span>
-  
-            <ul class="links">
-                <span class="close-btn material-symbols-rounded">close</span>
-                <li><a href="./index.html">Acceuil</a></li>
-                <li><a href="#promotions">Promotions</a></li>
-                <li><a href="#listsoins">Nos soins</a></li>
-                <li><a href="./galerie.html">Galéries</a></li>
-                <li><a href="./blog.html">Blog</a></li>
-            </ul>
-            <button class="login-btn">Réserver</button>
-        </nav>
-
+        <?php require 'navbar.php' ;?>
         <div class="header-txt">
             <h1 class="title">Nos <span> Tarifs</span></h1>
         </div>
     </header>
+    <?php require 'formulairerdv.php' ;?>
 
     <div class="wrapper">
       <h1>Nos promotions</h1>
@@ -662,49 +649,7 @@
   </section>
 
 
-<footer>
-  <div class="part1">
-      <div class="Lehahiahangel">
-          <a href="./index.html" class="iconelogo" ><img src="./images/Icones/Logo simple sans coleurs.svg" height="90px" width="90px"></a>
-          <p id="logoname">Léhahiah Angle's</p>
-          <p>
-              Notre équipe propose des prestations spécialisées et des soins adaptés, dans un institut toujours à la pointe des nouveautés.
-          </p>
-      </div>
-
-      <div class="Nospages">
-          <h1>Nos pages</h1>
-          <a href="./index.html">Acceuil</a>
-          <a href="#Nos tarifs">Nos Services</a>
-          <a href="#galérie">Galérie</a>
-          <a href="#Promotions">Promotions</a>
-          <a href="./blog.html">Blog</a>
-      </div>
-
-      <div class="Nouscontacter">
-          <h1><a href="./contact.html">Nous contacter</a></h1>
-          <div><a href=""><i class=" fac fa-solid fa-location-dot"></i>Charbonnages Gabon</a></div>
-          <div><a href=""><i class=" fac fa-solid fa-phone"></i>+241 066 68 58 85</a></div>
-          <div><a href=""><i class=" fac fa-brands fa-whatsapp"></i>+241 066 68 58 85</a></div>
-      </div>
-
-      <div class="Horraires">
-          <h1>Nos Horaires</h1>
-          <p>Lundi au Samedi 8h00  - 18h30 </p>
-          <p>Dimanche        13h30 - 18h30 </p>
-          <p>Fermer le mercredi</p>
-      </div>
-  </div>
-  <div class="part2">
-      <div class="social">
-          <a href="https://www.instagram.com/leha.hiah/"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://www.facebook.com/lehahiah.lehahiah.7/"><i class="fa-brands fa-facebook"></i></a>
-          <a href="https://twitter.com/Lehahiahangels"><i class="fa-brands fa-x-twitter"></i></a>
-          <a href="https://www.tiktok.com/@lehahiahangels?lang=fr"><i class="fa-brands fa-tiktok"></i></a>
-      </div>
-      <p>© 2024 Léhahiah Angel s, Tous droits réservés Développer par  <span>@willix digital</span></p>
-  </div>
-</footer>
+  <?php require 'footer.php'; ?>
     <script src="./js/Index - Tarif.js"> </script>
 </body>
 </html>
