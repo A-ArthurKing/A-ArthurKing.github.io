@@ -37,7 +37,7 @@
                     <h3>© 2024 Léhahiah Angel s, Tous droits réservés Développer par @willix digital</h3>
                 </div>
                 <div class="map-section">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27643645.45381059!2d-26.28331646686698!3d32.24547633342523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x107f2597e0926195%3A0xae58e3dd97126d4d!2sL%C3%A9hahiah%20Angel&#39;s!5e0!3m2!1sfr!2sma!4v1717512303554!5m2!1sfr!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1994.845864425969!2d9.4474882!3d0.4564198!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x107f2597e0926195%3A0xae58e3dd97126d4d!2sL%C3%A9hahiah%20Angel&#39;s!5e0!3m2!1sfr!2sma!4v1717992889033!5m2!1sfr!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                
                 </div>
             </div>
         </div>
@@ -51,6 +51,7 @@
         background-color: #c38154;
         min-height: 600px;
         width: 100vw;
+        max-width:100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -72,6 +73,7 @@
         width: 95vw;
         max-width: 1700px;
         height: 500px;
+        margin:20px auto;
         grid-template-columns: repeat(5 ,1fr);
         grid-template-rows: 1fr 3fr 1fr;
         grid-row-gap: 10px;
@@ -292,7 +294,9 @@
     }
     .map-section{
         grid-area: 5/1/5/3;
-
+    }
+    .linkpage a:hover{
+        border-bottom:1px transparent;
     }
     }
     </style>

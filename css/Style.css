@@ -285,6 +285,8 @@ img {
     top: 50%; 
     left: 0;
     transform: translateY(-50%); 
+    padding-top: -80px;
+    text-align: center;
 }
 .slider-txt a img{
     height:300px;
@@ -300,18 +302,14 @@ img {
     width: 50%;
     font-family: "Catalish Huntera";
     z-index: 1;
-}
-#slid1 , #slidtitle{
-    padding-top: -80px;
+    text-align: center;
 }
 
-
-#slidtitle b {
-    font-family: "Catalish Huntera";
+h2#slidtitle{
+    display: none;
 }
-
 #slidgraphe{
-    font-size: 20px;
+    font-size: 18px;
     margin: 0;
     width: 100%;
     z-index: 1;
@@ -338,9 +336,6 @@ img {
 }
 
 .slider-txt a {
-    color: white;
-}
-#slidgraphe{
     color: white;
 }
 /*
@@ -845,7 +840,8 @@ img {
     display: grid;
     height: auto;
     display: grid;
-    grid-template-columns: repeat(3, 24em);
+    grid-template-columns: repeat(5 ,1fr);
+    grid-template-rows: 1fr 3fr 1fr;    
     justify-content: center;
     grid-gap: 10px;
     padding: 20px 0;
@@ -866,6 +862,9 @@ img {
 .gal-box {
     overflow: hidden;
     border-radius: 15px;
+}
+.box1{
+    grid-area: 1/1/2/2;
 }
 .ma-galerie img:hover{
 transform: scale(1.1);
@@ -1066,6 +1065,7 @@ transform: scale(1.1);
     margin-bottom: 25px;
     padding-left: 30px;
     border-radius: 25px;
+    background-color: #C38154;;
 }
 .elementforms ::placeholder{
     padding-left: 20px;

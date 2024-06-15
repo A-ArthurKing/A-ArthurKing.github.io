@@ -43,10 +43,22 @@ const showPopupBtn = document.querySelector(".login-btn");
 const formPopup = document.querySelector(".form-popup");
 const hidePopupBtn = formPopup.querySelector(".close-btn");
 const signupLoginLink = formPopup.querySelectorAll(".bottom-link a");
+const linksNavBar = document.querySelector(".links");
 
-// Show mobile menu
-hamburgerBtn.addEventListener("click", () => {
+
+function toggleMenu() {
   navbarMenu.classList.toggle("show-menu");
+}
+
+// Afficher le menu mobile
+hamburgerBtn.addEventListener("click", toggleMenu);
+
+// Cacher le menu mobile
+hideMenuBtn.addEventListener("click", toggleMenu);
+
+// Ajouter des événements de clic à tous les éléments de la barre de navigation
+document.querySelectorAll(".links .link-item").forEach(item => {
+  item.addEventListener("click", toggleMenu);
 });
 
 // Hide mobile menu
@@ -69,6 +81,7 @@ signupLoginLink.forEach((link) => {
     );
   });
 });
+
 /*
 =================================================================================================================================
      *Carousel Nos prestations

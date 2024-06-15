@@ -204,7 +204,7 @@
             <h1>Galérie</h1>
         </div>
         <div class="ma-galerie">
-                <div class="gal-box box1"><a href="./galerie.html"><img src="./images/g70.jpg" alt="massage" draggable="false"></a></div>
+                <div class="gal-box1 box1"><a href="./galerie.html"><img src="./images/g70.jpg" alt="massage" draggable="false"></a></div>
                 <div class="gal-box box2"><a href="./galerie.html"><img src="./images/massagesansbg.jpg" alt="massage" draggable="false"></a></div>
                 <div class="gal-box box3"> <a href="./galerie.html"><img src="./images/bg10.jpg" alt="massage" draggable="false"></a></div>    
                 

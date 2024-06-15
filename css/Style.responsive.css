@@ -253,12 +253,15 @@
     .CSSgal {
         height: 80vh;
         max-height: 80vh;
+        text-align: center;
     }
     #slidtitle {
         font-size: 40px;
+        text-align: center;
     }
     #slidgraphe{
         font-size: 20px;
+        text-align: center;
     }
     .social-header{
     display: none;
@@ -274,6 +277,7 @@
         top: 50%; 
         left: 0;
         transform: translateY(-50%); 
+        text-align: center;
     }
     /*=======* PRÉAMBULE ========*/        
     .préambule{

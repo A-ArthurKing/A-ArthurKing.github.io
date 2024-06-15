@@ -4,11 +4,11 @@
 
             <ul class="links">
                 <span class="close-btn material-symbols-rounded">close</span>
-                <li><a href="#propos">A propos</a></li>
-                <li><a href="#nosprestations">Nos prestations</a></li>
-                <li><a href="./tarifs.php">Tarifs</a></li>
-                <li><a href="./galerie.php">Galéries</a></li>
-                <li><a href="./blog.php">Blog</a></li>
+                <li class="link-item"><a href="#propos">A propos</a></li>
+                <li class="link-item"><a href="#nosprestations">Nos prestations</a></li>
+                <li class="link-item"><a href="./tarifs.php">Tarifs</a></li>
+                <li class="link-item"><a href="./galerie.php">Galéries</a></li>
+                <li class="link-item"><a href="./blog.php">Blog</a></li>
             </ul>
             <button class="login-btn">Réserver</button>
 </nav>
@@ -127,6 +127,91 @@
     
     /*========================================  *Media Queries*  ===============================================================*/
 
+    @media (orientation: portrait) {
+    /*
+    =================================================================================================================================
+        *NAV
+    =================================================================================================================================
+    */
+    .navbar .close-btn{
+        display: block;
+        font-size: 40px;
+        color: white;
+        right: 10px;
+        top: 10px;
+        position: absolute;
+        text-align: right;
+    }
+    .navbar .hamburger-btn {
+        display: block;
+        font-size: 40px;
+        color: white;
+    }
+    .navbar {
+        margin: 0;
+        justify-content: space-between;
+        height: 55px;
+        padding: 5px 18px;
+    }
+    #logo  {
+    }
+    #logo a {
+        font-size: 1.4rem;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 10px;
+        color: white;
+    }
+    #logo span {
+        font-family: "Catalish Huntera";
+        color: white;
+    }
+    .navbar .links {
+        position: fixed;
+        top: 0;
+        z-index: 99999;
+        left: -100%;
+        display: block;
+        height: 100vh;
+        min-height: 100vh;
+        width: 100%;
+        padding-top: 60px;
+        text-align: center;
+        background: #C38154;    
+        transition: 0.3s ease;
+    }
+    .navbar .links.show-menu {
+        left: 0;
+    }
+    .navbar .links.hide-menu {
+        left: -100%;
+    }
+    .navbar .links a {
+        display: inline-flex;
+        margin: 20px 0;
+        font-size: 1.2rem;
+        color: white;
+        border: 2px solid transparent; 
+        border-bottom: 2px solid white; 
+        width: 90%;
+        border-radius: 0;
+    }
+    .navbar .links a:hover {
+        color: white;
+    }
+    .navbar .login-btn {
+        font-size: 0.9rem;
+        padding: 7px 10px;
+        display: none; 
+    }
+    .navbar.scrolled {
+        background-color: #C38154;  
+        color: white;
+    }
+    .links a.scrolled,#logo a.scrolled {
+        color:white; 
+    }
+    }
     @media only screen and (max-width: 990px) {
     /*
     =================================================================================================================================
@@ -178,10 +263,13 @@
         padding-top: 60px;
         text-align: center;
         background: #C38154;    
-        transition: 0.2s ease;
+        transition: 0.3s ease;
     }
     .navbar .links.show-menu {
         left: 0;
+    }
+    .navbar .links.hide-menu {
+        left: -100%;
     }
     .navbar .links a {
         display: inline-flex;
@@ -210,3 +298,4 @@
     }
 }
 </style>
+
